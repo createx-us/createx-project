@@ -1,0 +1,65 @@
+{
+    "name": "createx-monorepo",
+    "version": "1.0.0",
+    "description": "CreateX Protocol - Decentralized Innovation Education Platform",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "clean": "turbo run clean && rm -rf node_modules",
+        "format": "prettier --write .",
+        "type-check": "turbo run type-check",
+        "deploy": "turbo run deploy",
+        "setup": "./tools/scripts/setup.sh",
+        "install:all": "npm install && npm run build",
+        "dev:frontend": "cd packages/frontend && npm run dev",
+        "dev:backend": "cd packages/backend && npm run dev",
+        "dev:contracts": "cd packages/smart-contracts && npm run dev",
+        "dev:website": "cd packages/website && npm run dev",
+        "dev:mobile": "cd packages/mobile-app && npm run dev",
+        "deploy:dev": "./tools/scripts/deploy.sh development",
+        "deploy:staging": "./tools/scripts/deploy.sh staging",
+        "deploy:prod": "./tools/scripts/deploy.sh production",
+        "check": "npm run lint && npm run type-check && npm run test",
+        "prepare": "husky install || true"
+    },
+    "devDependencies": {
+        "@turbo/gen": "^1.10.12",
+        "turbo": "latest",
+        "prettier": "^3.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "eslint": "^8.0.0",
+        "eslint-config-prettier": "^9.0.0",
+        "typescript": "^5.0.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.0.0",
+        "concurrently": "^8.0.0",
+        "cross-env": "^7.0.0"
+    },
+    "packageManager": "npm@10.0.0",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "keywords": [
+        "blockchain",
+        "education",
+        "defi",
+        "web3",
+        "innovation",
+        "community",
+        "ethereum",
+        "smart-contracts"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/createx-protocol/createx-monorepo.git"
+    },
+    "author": "CreateX Team",
+    "license": "MIT"
+}
