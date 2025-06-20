@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { NextResponse } from 'next/server';
+import { contentManager } from '../lib/content';
 
 // Content API Hook
 export function useContentAPI() {
@@ -76,7 +78,6 @@ export function useModules() {
 
   useEffect(() => {
     loadModules();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {
@@ -333,7 +334,6 @@ export function useProgress() {
         console.error('Failed to load progress:', err);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {
@@ -394,7 +394,7 @@ export const ContentUtils = {
   }
 };
 
-const hooks = {
+export default {
   useContentAPI,
   useModules,
   useTranslation,
@@ -404,5 +404,3 @@ const hooks = {
   useProgress,
   ContentUtils
 };
-
-export default hooks;
