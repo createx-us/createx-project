@@ -1,0 +1,340 @@
+{
+    "navigation": {
+        "home": "首页",
+        "modules": "模块",
+        "workshops": "工作坊",
+        "toolkit": "工具包",
+        "research": "研究",
+        "community": "社区",
+        "about": "关于我们",
+        "getStarted": "开始学习"
+    },
+    "home": {
+        "title": "AI增强设计思维",
+        "subtitle": "变革学习方式",
+        "description": "为使用CreateX协议的工作坊引导师和社区领导者提供的综合指南。通过27个互动模块掌握设计思维、AI集成和变革性引导技能。",
+        "outcomePromise": "学习承诺：完成本指南后，您将能够设计、引导和评估完整的CreateX工作坊，在每个阶段都能熟练地集成AI技术。",
+        "startLearning": "开始学习",
+        "guideOverview": "指南概览",
+        "whatYoullMaster": "您将掌握什么",
+        "whatYoullMasterDescription": "从创造力基础到AI集成，本指南涵盖了成为专业引导师所需的一切。",
+        "learningPathOverview": "学习路径概览",
+        "learningPathDescription": "27个综合模块，分为6个学习轨道，系统性技能发展。",
+        "readyToTransform": "准备好变革您的引导实践了吗？",
+        "readyToTransformDescription": "加入已经在使用CreateX方法论创造变革性学习体验的数千名引导师。",
+        "startYourJourney": "开启您的旅程",
+        "joinCommunity": "加入社区"
+    },
+    "modules": {
+        "title": "引导师指南模块",
+        "description": "通过分为6个学习轨道的27个综合模块，掌握设计思维、AI集成和变革性引导。",
+        "startModule": "开始模块",
+        "reviewModule": "复习模块",
+        "learningObjectives": "学习目标：",
+        "yourProgress": "您的学习进度",
+        "progressDescription": "跟踪您在综合引导师课程中的进度",
+        "completed": "已完成",
+        "markComplete": "标记完成",
+        "previous": "上一个",
+        "next": "下一个",
+        "nextModule": "下一个模块",
+        "backToModules": "返回模块",
+        "resources": "资源",
+        "downloadTemplates": "下载模板",
+        "discussionForum": "讨论论坛",
+        "interactiveSection": "互动部分",
+        "interactiveSectionDescription": "本部分包括实践练习和活动。",
+        "creativityFundamentals": {
+            "title": "创造力基础",
+            "description": "探索创造力的本质、神话和科学基础，为有效的引导奠定基础。",
+            "openingStory": {
+                "title": "开场故事",
+                "content": "\"空白页是伪装的宇宙。\"\n\n1943年，工程师野口勇被关押在亚利桑那州的拘留营中。在缺乏工具的情况下，他用拾来的木材和黏土制作雕塑，将约束转化为催化剂。他的故事提醒我们，创造力不是环境的奢侈品，而是一种将限制重新定义为邀请的心态。\n\n**反思：**回想一下限制激发您创造力的时刻。约束如何实际上帮助而不是阻碍您的创造过程？"
+            },
+            "definingCreativity": {
+                "title": "定义创造力",
+                "content": "简单来说，创造力是在给定背景下产生同时**新颖且适当**的想法、工艺品或行动的能力。\n\n每个学科都为这一定义增添了不同的色彩：\n\n### 心理学视角\n创造力结合了发散思维（流畅性、灵活性、原创性、精细化）和聚合判断来选择有前景的选择。（Guilford, 1950; Runco, 2004）\n\n### 神经科学视角\nfMRI研究将创造性想法的孵化与默认模式网络（白日梦）和执行控制网络（评估）之间的动态切换联系起来。\n\n### 人类学视角\n创造力是一种社会契约：伊博语的\"nkà\"、日语的\"monozukuri\"和硅谷的\"创新\"推崇不同的产出、规范和成功标准。\n\n**关键洞察：**创造力 = 新颖性 × 实用性（相对于背景）。"
+            },
+            "mythsToUnlearn": {
+                "title": "需要摒弃的神话",
+                "content": "让我们揭穿一些持续存在的创造力神话：\n\n| 神话 | 现实 | 设计含义 |\n|------|---------|----------|\n| \"灵感是瞬间的\" | 突破来自迭代孵化和重组 | 在冲刺中建立慢启发时间（如过夜反思） |\n| \"只有艺术家才有创造力\" | 农民发明灌溉技巧；会计师设计巧妙宏 | 使用广泛案例例子激发跨领域洞察 |\n| \"约束扼杀创造力\" | 深思熟虑的限制锐化焦点并激发原创性 | 在创意阶段引入明确的约束卡片 |"
+            }
+        },
+        "creativeConfidence": {
+            "title": "创造性自信",
+            "description": "建立个人和团队的创造性自信，克服创造性障碍。",
+            "introduction": "创造性自信是相信自己能够产生创新想法并实施创造性解决方案的信念。这不是天赋，而是可以培养的技能。",
+            "learningObjectives": [
+                "理解创造性自信的心理学基础",
+                "学习创造性自信的测量技术",
+                "运用AI作为自信放大器",
+                "在个人和团队层面建立自信"
+            ],
+            "keyComponents": {
+                "title": "关键组成部分",
+                "selfEfficacy": "自我效能：相信自己能够执行创造性任务的能力",
+                "growthMindset": "成长心态：理解创造能力可以通过发展获得",
+                "toleranceAmbiguity": "容忍模糊性：对不确定性和不完整信息感到舒适",
+                "intrinsicMotivation": "内在动机：为个人满足而非外部奖励而创造的驱动力"
+            },
+            "psychologicalFoundations": {
+                "title": "心理学基础",
+                "pillar1": {
+                    "title": "好奇心与惊奇",
+                    "description": "探索、质疑假设、寻求新颖视角的驱动力。好奇心是创造性思维的燃料。"
+                },
+                "pillar2": {
+                    "title": "容忍模糊性",
+                    "description": "对不确定性、不完整信息和多种可能解决方案感到舒适。这对创造性探索至关重要。"
+                },
+                "pillar3": {
+                    "title": "实验心态",
+                    "description": "愿意尝试新方法、从失败中学习、快速迭代。拥抱原型胜过完美。"
+                },
+                "pillar4": {
+                    "title": "协作精神",
+                    "description": "认识到最好的想法通过多元化视角和集体智慧产生。重视在他人想法基础上建构。"
+                }
+            },
+            "measuringConfidence": {
+                "title": "测量创造性自信",
+                "individualIndicators": "个人指标：想法生成流畅性、创造性任务中的冒险行为、反馈接受度",
+                "teamIndicators": "团队指标：心理安全水平、想法建构频率、集体成果所有权"
+            }
+        },
+        "designThinkingHistory": {
+            "title": "设计思维历史",
+            "description": "了解设计思维的演变及其在现代创新中的应用。",
+            "introduction": "设计思维从工业设计领域发展而来，现已成为解决复杂问题的重要方法论。",
+            "timeline": {
+                "1960s": "1960年代：工业设计师开始系统化设计过程",
+                "1970s": "1970年代：斯坦福大学设计项目成立",
+                "1990s": "1990年代：IDEO公司普及设计思维方法",
+                "2000s": "2000年代：设计思维扩展到商业和社会创新领域",
+                "2010s": "2010年代：全球教育机构采用设计思维课程"
+            }
+        },
+        "empathyMapping": {
+            "title": "同理心地图",
+            "description": "通过深入理解用户需求、感受和动机来建立同理心的工具和技术。",
+            "introduction": "同理心是设计思维的第一阶段，旨在深入理解用户的真实需求和体验。",
+            "techniques": {
+                "userInterviews": "用户访谈：进行深度对话了解用户真实体验",
+                "observation": "观察法：在自然环境中观察用户行为",
+                "empathyMaps": "同理心地图：可视化用户的想法、感受、看到、听到和行为",
+                "userJourneys": "用户旅程：映射用户与问题互动的完整体验"
+            },
+            "bestPractices": [
+                "暂停判断，专注理解",
+                "提出开放性问题",
+                "注意非言语线索",
+                "寻找意外的洞察",
+                "记录具体的引用和故事"
+            ]
+        },
+        "defineChallenge": {
+            "title": "定义挑战",
+            "description": "基于用户洞察将复杂问题重新构架为清晰、可操作的设计挑战。",
+            "introduction": "定义阶段将同理心研究转化为清晰的问题陈述，指导后续的创意生成。",
+            "pointOfView": {
+                "title": "观点陈述（POV）",
+                "format": "用户 + 需求 + 洞察",
+                "example": "忙碌的父母需要一种快速准备健康餐食的方法，因为他们重视家庭时间胜过复杂的烹饪。"
+            },
+            "howMightWe": {
+                "title": "我们如何能够（HMW）",
+                "description": "将问题陈述转化为创意生成的机会",
+                "guidelines": [
+                    "从用户观点开始",
+                    "保持足够广泛以允许创意自由",
+                    "保持足够具体以提供指导",
+                    "避免隐含解决方案"
+                ]
+            }
+        },
+        "ideationMethods": {
+            "title": "创意生成方法",
+            "description": "产生大量创新想法的结构化技术和方法。",
+            "introduction": "创意生成是设计思维过程中发散思维的阶段，重点是数量胜过质量。",
+            "techniques": {
+                "brainstorming": {
+                    "title": "头脑风暴",
+                    "rules": [
+                        "追求数量",
+                        "暂缓判断",
+                        "欢迎疯狂想法",
+                        "在他人想法基础上建构"
+                    ]
+                },
+                "mindMapping": {
+                    "title": "思维导图",
+                    "description": "围绕中心主题可视化连接想法"
+                },
+                "scamper": {
+                    "title": "SCAMPER方法",
+                    "description": "替代、组合、适应、修改、其他用途、消除、重新排列"
+                },
+                "sixThinkingHats": {
+                    "title": "六顶思考帽",
+                    "description": "从不同角度系统性探索想法"
+                }
+            }
+        },
+        "prototypingBasics": {
+            "title": "原型制作基础",
+            "description": "快速、低成本地构建和测试想法的原则和方法。",
+            "introduction": "原型制作让想法变得有形，能够快速测试和迭代概念。",
+            "principles": [
+                "快速而粗糙胜过完美",
+                "专注于核心功能",
+                "使学习最大化，成本最小化",
+                "根据目的选择保真度"
+            ],
+            "types": {
+                "paper": "纸质原型：快速、廉价、灵活",
+                "digital": "数字原型：交互式、可分享、易于迭代",
+                "physical": "物理原型：有形、真实、可测试",
+                "roleplay": "角色扮演：服务和体验的原型制作"
+            }
+        },
+        "testingFeedback": {
+            "title": "测试与反馈",
+            "description": "与真实用户测试原型并收集有意义反馈的方法。",
+            "introduction": "测试阶段验证假设并为进一步迭代提供洞察。",
+            "testingMethods": {
+                "userTesting": "用户测试：观察用户与原型的互动",
+                "interviews": "反馈访谈：深入了解用户体验",
+                "surveys": "调查问卷：收集定量反馈数据",
+                "abTesting": "A/B测试：比较不同版本的效果"
+            },
+            "feedbackPrinciples": [
+                "创造安全的反馈环境",
+                "提出具体问题",
+                "观察行为而非仅听取意见",
+                "寻找模式和趋势",
+                "准备好快速迭代"
+            ]
+        },
+        "aiIntegration": {
+            "title": "AI集成",
+            "description": "如何在设计思维过程中有效整合AI工具和技术。",
+            "introduction": "AI可以增强设计思维的每个阶段，从研究到创意生成再到原型制作。",
+            "applications": {
+                "research": {
+                    "title": "研究增强",
+                    "description": "使用AI分析用户数据、识别模式、生成洞察"
+                },
+                "ideation": {
+                    "title": "创意生成支持",
+                    "description": "AI辅助头脑风暴、概念变化、创意催化"
+                },
+                "prototyping": {
+                    "title": "快速原型制作",
+                    "description": "AI生成的内容、自动化设计、快速迭代"
+                },
+                "testing": {
+                    "title": "智能测试",
+                    "description": "AI驱动的用户测试分析、情感分析、预测模型"
+                }
+            },
+            "bestPractices": [
+                "将AI定位为协作者而非替代品",
+                "保持人类创造性的核心地位",
+                "对AI生成的内容保持批判性思维",
+                "确保多样性和包容性"
+            ]
+        },
+        "processOverview": {
+            "title": "设计思维过程概述",
+            "description": "设计思维五个阶段的完整指南和最佳实践",
+            "introduction": "设计思维是一个以人为中心的创新方法，包含五个相互关联的阶段。",
+            "stages": {
+                "empathize": {
+                    "title": "同理心",
+                    "description": "理解用户的需求、想法和动机",
+                    "activities": ["用户访谈", "观察研究", "同理心地图", "人物画像"]
+                },
+                "define": {
+                    "title": "定义",
+                    "description": "基于用户洞察重新构架问题",
+                    "activities": ["问题陈述", "观点表述", "如何能够问题", "机会识别"]
+                },
+                "ideate": {
+                    "title": "创意",
+                    "description": "生成解决问题的创新想法",
+                    "activities": ["头脑风暴", "思维导图", "创意评估", "概念选择"]
+                },
+                "prototype": {
+                    "title": "原型",
+                    "description": "快速构建想法的初步版本",
+                    "activities": ["纸质原型", "数字模型", "角色扮演", "故事板"]
+                },
+                "test": {
+                    "title": "测试",
+                    "description": "与用户测试原型并收集反馈",
+                    "activities": ["用户测试", "反馈收集", "迭代改进", "解决方案验证"]
+                }
+            }
+        },
+        "workshop": {
+            "title": "工作坊管理",
+            "planning": {
+                "title": "工作坊规划",
+                "description": "设计和结构化有效的设计思维工作坊",
+                "components": {
+                    "objectives": "学习目标：明确参与者应该获得的技能和见解",
+                    "audience": "受众分析：了解参与者的背景、需求和期望",
+                    "timeline": "时间安排：为每个活动分配适当的时间",
+                    "materials": "材料准备：准备所需的工具、模板和资源",
+                    "space": "空间设计：创造有利于协作和创造的环境"
+                }
+            },
+            "facilitation": {
+                "title": "引导技巧",
+                "description": "有效引导设计思维会话的技能和技术",
+                "skills": {
+                    "activeListening": "积极倾听：全神贯注地听取参与者的想法",
+                    "questionTechniques": "提问技巧：使用开放性问题推动深度思考",
+                    "groupDynamics": "团队动态：管理不同个性和工作风格",
+                    "timeManagement": "时间管理：保持活动节奏和能量水平",
+                    "conflictResolution": "冲突解决：处理分歧和紧张情况"
+                }
+            },
+            "evaluation": {
+                "title": "工作坊评估",
+                "description": "测量工作坊效果和参与者学习成果",
+                "methods": {
+                    "feedbackForms": "反馈表格：收集参与者对体验的评价",
+                    "skillAssessment": "技能评估：测试特定设计思维能力的掌握",
+                    "portfolioReview": "作品集审查：评估参与者创建的原型和解决方案",
+                    "followUpSurveys": "后续调查：跟踪长期影响和应用"
+                }
+            }
+        }
+    },
+    "tracks": {
+        "foundations": "基础",
+        "designProcess": "设计过程",
+        "workshopDesign": "工作坊设计",
+        "aiTechnology": "AI与技术",
+        "caseStudies": "案例研究",
+        "professionalGrowth": "专业成长"
+    },
+    "common": {
+        "chapter": "章节",
+        "minutes": "分钟",
+        "beginner": "初级",
+        "intermediate": "中级",
+        "advanced": "高级",
+        "individual": "个人",
+        "team": "团队",
+        "loading": "加载中...",
+        "error": "错误",
+        "retry": "重试",
+        "close": "关闭",
+        "save": "保存",
+        "cancel": "取消",
+        "continue": "继续",
+        "complete": "完成"
+    }
+}

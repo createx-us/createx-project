@@ -1,0 +1,469 @@
+{
+    "navigation": {
+        "home": "Home",
+        "modules": "Modules",
+        "workshops": "Workshops",
+        "toolkit": "Toolkit",
+        "research": "Research",
+        "community": "Community",
+        "about": "About",
+        "getStarted": "Get Started"
+    },
+    "home": {
+        "title": "Transform Learning with",
+        "subtitle": "AI-Enhanced Design Thinking",
+        "description": "A comprehensive guide for workshop facilitators and community leaders using the CreateX Protocol. Master design thinking, AI integration, and transformational facilitation in 27 interactive modules.",
+        "outcomePromise": "Outcome Promise: By the final page you will be able to design, facilitate, and evaluate a full CreateX workshop, integrating AI fluently at every stage.",
+        "startLearning": "Start Learning",
+        "guideOverview": "Guide Overview",
+        "whatYoullMaster": "What You'll Master",
+        "whatYoullMasterDescription": "From creativity fundamentals to AI integration, this guide covers everything you need to become an expert facilitator.",
+        "learningPathOverview": "Learning Path Overview", 
+        "learningPathDescription": "27 comprehensive modules organized into 6 learning tracks for systematic skill development.",
+        "readyToTransform": "Ready to Transform Your Facilitation Practice?",
+        "readyToTransformDescription": "Join thousands of facilitators who are already using CreateX methodologies to create transformational learning experiences.",
+        "startYourJourney": "Start Your Journey",
+        "joinCommunity": "Join Community",
+        "creativeConfidence": {
+            "title": "Creative Confidence",
+            "description": "Master the psychology and neuroscience of creativity. Build confidence at individual and team levels using proven techniques and AI amplification.",
+            "exploreChapter": "Explore Chapter 3"
+        },
+        "facilitationSkills": {
+            "title": "Facilitation Skills", 
+            "description": "Learn core communication micro-skills, psychological safety techniques, and how to manage group dynamics effectively.",
+            "exploreChapter": "Explore Chapter 17"
+        },
+        "aiIntegration": {
+            "title": "AI Integration",
+            "description": "Master AI-enhanced facilitation moves, prompt-crafting frameworks, and ethical guidelines for responsible AI use in workshops.",
+            "exploreChapter": "Explore Chapter 18"
+        },
+        "learningTracks": "Learning Tracks",
+        "advancedTopics": "Advanced Topics",
+        "track1": {
+            "title": "Track 1: Foundations (Chapters 1-5)",
+            "description": "Creativity principles, design thinking history, creative confidence, CreateX mission & facilitator mindsets."
+        },
+        "track2": {
+            "title": "Track 2: Design Process (Chapters 6-14)",
+            "description": "Complete design thinking methodology from research & empathy to implementation & reflection."
+        },
+        "track3": {
+            "title": "Track 3: Workshop Design (Chapters 15-17)",
+            "description": "Scoping & logistics, agenda design, and core facilitation skills for effective workshops."
+        },
+        "track4": {
+            "title": "Track 4: AI & Technology (Chapters 18-20)",
+            "description": "AI integration playbook, real-time troubleshooting, and capturing & sharing outcomes."
+        },
+        "track5": {
+            "title": "Track 5: Case Studies (Chapters 21-24)",
+            "description": "Real-world applications, analytics & KPIs, and measuring impact across different contexts."
+        },
+        "track6": {
+            "title": "Track 6: Professional Growth (Chapters 25-27)",
+            "description": "Certification pathways, personal branding, and joining the CreateX community of practice."
+        },
+        "facilitatorGuideModules": "Facilitator Guide Modules"
+    },
+    "modules": {
+        "title": "Facilitator Guide Modules",
+        "description": "Master design thinking, AI integration, and transformational facilitation through 27 comprehensive modules organized into 6 learning tracks.",
+        "startModule": "Start Module",
+        "reviewModule": "Review Module",
+        "learningObjectives": "Learning Objectives:",
+        "yourProgress": "Your Learning Progress",
+        "progressDescription": "Track your progress through the comprehensive facilitator curriculum",
+        "completed": "Completed",
+        "markComplete": "Mark Complete",
+        "previous": "Previous",
+        "next": "Next",
+        "nextModule": "Next Module",
+        "backToModules": "Back to Modules",
+        "resources": "Resources",
+        "downloadTemplates": "Download Templates",
+        "discussionForum": "Discussion Forum",
+        "interactiveSection": "Interactive Section",
+        "interactiveSectionDescription": "This section includes hands-on exercises and activities.",
+        "creativityFundamentals": {
+            "title": "Creativity Fundamentals",
+            "description": "Explore the nature, myths and scientific foundations of creativity to establish a foundation for effective facilitation.",
+            "openingStory": {
+                "title": "Opening Story",
+                "content": "\"The blank page is the universe in disguise.\"\n\nIn 1943, engineer Isamu Noguchi was detained in an Arizona internment camp. Lacking tools, he sculpted with salvaged wood and clay, transforming constraint into catalyst. His story reminds us that creativity isn't a luxury of circumstance but a mindset that reframes limitation as invitation.\n\n**Reflection:** Think of a time when limitations sparked your creativity. How did constraints actually help rather than hinder your creative process?"
+            },
+            "definingCreativity": {
+                "title": "Defining Creativity",
+                "content": "Simply put, creativity is the ability to generate ideas, artifacts, or actions that are both **novel and appropriate** within a given context.\n\nEach discipline adds a different hue to this definition:\n\n### Psychological Perspective\nCreativity combines divergent thinking (fluency, flexibility, originality, elaboration) with convergent judgment to select promising options. (Guilford, 1950; Runco, 2004)\n\n### Neuroscience Perspective\nfMRI studies link creative insight incubation to dynamic switching between the default mode network (daydreaming) and executive control networks (evaluation).\n\n### Anthropological Perspective\nCreativity is a social contract: Igbo \"nkà,\" Japanese \"monozukuri,\" and Silicon Valley \"innovation\" celebrate different outputs, norms, and success criteria.\n\n**Key Insight:** Creativity = Novelty × Utility (relative to context)."
+            },
+            "mythsToUnlearn": {
+                "title": "Myths to Unlearn",
+                "content": "Let's debunk some persistent creativity myths:\n\n| Myth | Reality | Design Implication |\n|------|---------|----------|\n| \"Inspiration is instant\" | Breakthroughs emerge from iterative incubation and recombination | Build slow-heuristic time into sprints (e.g., overnight reflection) |\n| \"Only artists are creative\" | Farmers invent irrigation hacks; accountants design clever macros | Use broad case examples to spark cross-domain insights |\n| \"Constraints kill creativity\" | Thoughtful limits sharpen focus and trigger originality | Introduce explicit constraint cards during ideation |"
+            },
+            "learningObjectives": [
+                "Understand the neuroscience behind creative thinking",
+                "Identify and debunk common creativity myths",
+                "Develop personal creative confidence",
+                "Learn foundational facilitation principles"
+            ]
+        },
+        "creativeConfidence": {
+            "title": "Creative Confidence",
+            "description": "Build personal and team creative confidence, overcoming creative blocks.",
+            "introduction": "Creative confidence is the belief in one's ability to generate innovative ideas and implement creative solutions. It's not a talent, but a skill that can be developed.",
+            "learningObjectives": [
+                "Understand the psychological foundations of creative confidence",
+                "Learn techniques for measuring creative confidence",
+                "Apply AI as a confidence amplifier",
+                "Build confidence at individual and team levels"
+            ],
+            "keyComponents": {
+                "title": "Key Components",
+                "selfEfficacy": "Self-Efficacy: Belief in one's ability to execute creative tasks",
+                "growthMindset": "Growth Mindset: Understanding that creative abilities can be developed",
+                "toleranceAmbiguity": "Tolerance for Ambiguity: Comfort with uncertainty and incomplete information",
+                "intrinsicMotivation": "Intrinsic Motivation: Drive to create for personal satisfaction rather than external rewards"
+            },
+            "psychologicalFoundations": {
+                "title": "Psychological Foundations",
+                "pillar1": {
+                    "title": "Curiosity & Wonder",
+                    "description": "The drive to explore, question assumptions, and seek novel perspectives. Curiosity is the fuel of creative thinking."
+                },
+                "pillar2": {
+                    "title": "Tolerance for Ambiguity",
+                    "description": "Comfort with uncertainty, incomplete information, and multiple possible solutions. Essential for creative exploration."
+                },
+                "pillar3": {
+                    "title": "Experimental Mindset",
+                    "description": "Willingness to try new approaches, learn from failures, and iterate quickly. Embracing prototyping over perfection."
+                },
+                "pillar4": {
+                    "title": "Collaborative Spirit",
+                    "description": "Recognition that the best ideas emerge through diverse perspectives and collective intelligence. Valuing building on others' ideas."
+                }
+            },
+            "measuringConfidence": {
+                "title": "Measuring Creative Confidence",
+                "individualIndicators": "Individual Indicators: Idea generation fluency, risk-taking in creative tasks, receptivity to feedback",
+                "teamIndicators": "Team Indicators: Psychological safety levels, frequency of idea building, collective ownership of outcomes"
+            }
+        },
+        "designThinkingHistory": {
+            "title": "Design Thinking History",
+            "description": "Understand the evolution of design thinking and its application in modern innovation.",
+            "introduction": "Design thinking evolved from industrial design and has become an important methodology for solving complex problems.",
+            "timeline": {
+                "1960s": "1960s: Industrial designers began systematizing the design process",
+                "1970s": "1970s: Stanford Design Program established",
+                "1990s": "1990s: IDEO popularized design thinking methods",
+                "2000s": "2000s: Design thinking expanded to business and social innovation",
+                "2010s": "2010s: Global educational institutions adopted design thinking curricula"
+            }
+        },
+        "empathyMapping": {
+            "title": "Empathy Mapping",
+            "description": "Tools and techniques for building empathy through deep understanding of user needs, feelings, and motivations.",
+            "introduction": "Empathy is the first stage of design thinking, aimed at deeply understanding users' real needs and experiences.",
+            "techniques": {
+                "userInterviews": "User Interviews: Conduct in-depth conversations to understand real user experiences",
+                "observation": "Observation: Watch user behavior in natural environments",
+                "empathyMaps": "Empathy Maps: Visualize what users think, feel, see, hear, and do",
+                "userJourneys": "User Journeys: Map the complete experience of users interacting with problems"
+            },
+            "bestPractices": [
+                "Suspend judgment and focus on understanding",
+                "Ask open-ended questions",
+                "Pay attention to non-verbal cues",
+                "Look for unexpected insights",
+                "Document specific quotes and stories"
+            ]
+        },
+        "defineChallenge": {
+            "title": "Define Challenge",
+            "description": "Reframe complex problems into clear, actionable design challenges based on user insights.",
+            "introduction": "The define stage transforms empathy research into clear problem statements that guide subsequent ideation.",
+            "pointOfView": {
+                "title": "Point of View (POV) Statement",
+                "format": "User + Need + Insight",
+                "example": "Busy parents need a way to quickly prepare healthy meals because they value family time over complex cooking."
+            },
+            "howMightWe": {
+                "title": "How Might We (HMW)",
+                "description": "Transform problem statements into opportunities for ideation",
+                "guidelines": [
+                    "Start with the user's perspective",
+                    "Keep broad enough to allow creative freedom",
+                    "Keep specific enough to provide direction",
+                    "Avoid implying solutions"
+                ]
+            }
+        },
+        "ideationMethods": {
+            "title": "Ideation Methods",
+            "description": "Structured techniques and methods for generating large quantities of innovative ideas.",
+            "introduction": "Ideation is the divergent thinking stage of the design thinking process, focusing on quantity over quality.",
+            "techniques": {
+                "brainstorming": {
+                    "title": "Brainstorming",
+                    "rules": [
+                        "Go for quantity",
+                        "Defer judgment",
+                        "Welcome wild ideas",
+                        "Build on others' ideas"
+                    ]
+                },
+                "mindMapping": {
+                    "title": "Mind Mapping",
+                    "description": "Visually connecting ideas around a central theme"
+                },
+                "scamper": {
+                    "title": "SCAMPER Method",
+                    "description": "Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse"
+                },
+                "sixThinkingHats": {
+                    "title": "Six Thinking Hats",
+                    "description": "Systematically explore ideas from different perspectives"
+                }
+            }
+        },
+        "prototypingBasics": {
+            "title": "Prototyping Basics",
+            "description": "Principles and methods for quickly and cost-effectively building and testing ideas.",
+            "introduction": "Prototyping makes ideas tangible, enabling rapid testing and iteration of concepts.",
+            "principles": [
+                "Fast and rough beats perfect",
+                "Focus on core functionality",
+                "Maximize learning, minimize cost",
+                "Choose fidelity based on purpose"
+            ],
+            "types": {
+                "paper": "Paper Prototypes: Quick, cheap, flexible",
+                "digital": "Digital Prototypes: Interactive, shareable, easy to iterate",
+                "physical": "Physical Prototypes: Tangible, real, testable",
+                "roleplay": "Role Playing: Prototyping services and experiences"
+            }
+        },
+        "testingFeedback": {
+            "title": "Testing & Feedback",
+            "description": "Methods for testing prototypes with real users and gathering meaningful feedback.",
+            "introduction": "The testing stage validates assumptions and provides insights for further iteration.",
+            "testingMethods": {
+                "userTesting": "User Testing: Observe users interacting with prototypes",
+                "interviews": "Feedback Interviews: Deep dive into user experiences",
+                "surveys": "Surveys: Collect quantitative feedback data",
+                "abTesting": "A/B Testing: Compare effectiveness of different versions"
+            },
+            "feedbackPrinciples": [
+                "Create a safe feedback environment",
+                "Ask specific questions",
+                "Observe behavior, not just opinions",
+                "Look for patterns and trends",
+                "Be prepared to iterate quickly"
+            ]
+        },
+        "aiIntegration": {
+            "title": "AI Integration",
+            "description": "How to effectively integrate AI tools and technologies in the design thinking process.",
+            "introduction": "AI can enhance every stage of design thinking, from research to ideation to prototyping.",
+            "applications": {
+                "research": {
+                    "title": "Research Enhancement",
+                    "description": "Use AI to analyze user data, identify patterns, generate insights"
+                },
+                "ideation": {
+                    "title": "Ideation Support",
+                    "description": "AI-assisted brainstorming, concept variations, creative catalysts"
+                },
+                "prototyping": {
+                    "title": "Rapid Prototyping",
+                    "description": "AI-generated content, automated design, quick iterations"
+                },
+                "testing": {
+                    "title": "Intelligent Testing",
+                    "description": "AI-driven user testing analysis, sentiment analysis, predictive models"
+                }
+            },
+            "bestPractices": [
+                "Position AI as collaborator, not replacement",
+                "Keep human creativity at the core",
+                "Maintain critical thinking about AI-generated content",
+                "Ensure diversity and inclusion"
+            ]
+        },
+        "processOverview": {
+            "title": "Design Thinking Process Overview",
+            "description": "Complete guide to the five stages of design thinking and best practices",
+            "introduction": "Design thinking is a human-centered innovation approach consisting of five interconnected stages.",
+            "stages": {
+                "empathize": {
+                    "title": "Empathize",
+                    "description": "Understand users' needs, thoughts, and motivations",
+                    "activities": ["User Interviews", "Observational Research", "Empathy Maps", "Personas"]
+                },
+                "define": {
+                    "title": "Define",
+                    "description": "Reframe problems based on user insights",
+                    "activities": ["Problem Statements", "Point of View", "How Might We", "Opportunity Identification"]
+                },
+                "ideate": {
+                    "title": "Ideate", 
+                    "description": "Generate innovative ideas to solve problems",
+                    "activities": ["Brainstorming", "Mind Mapping", "Idea Evaluation", "Concept Selection"]
+                },
+                "prototype": {
+                    "title": "Prototype",
+                    "description": "Quickly build preliminary versions of ideas",
+                    "activities": ["Paper Prototypes", "Digital Models", "Role Playing", "Storyboards"]
+                },
+                "test": {
+                    "title": "Test",
+                    "description": "Test prototypes with users and gather feedback",
+                    "activities": ["User Testing", "Feedback Collection", "Iterative Improvement", "Solution Validation"]
+                }
+            }
+        },
+        "workshop": {
+            "title": "Workshop Management",
+            "planning": {
+                "title": "Workshop Planning",
+                "description": "Design and structure effective design thinking workshops",
+                "components": {
+                    "objectives": "Learning Objectives: Define clear skills and insights participants should gain",
+                    "audience": "Audience Analysis: Understand participants' backgrounds, needs, and expectations",
+                    "timeline": "Timeline: Allocate appropriate time for each activity",
+                    "materials": "Materials Preparation: Prepare required tools, templates, and resources",
+                    "space": "Space Design: Create an environment conducive to collaboration and creativity"
+                }
+            },
+            "facilitation": {
+                "title": "Facilitation Skills",
+                "description": "Skills and techniques for effectively facilitating design thinking sessions",
+                "skills": {
+                    "activeListening": "Active Listening: Give full attention to participants' ideas",
+                    "questionTechniques": "Questioning Techniques: Use open-ended questions to drive deep thinking",
+                    "groupDynamics": "Group Dynamics: Manage different personalities and working styles",
+                    "timeManagement": "Time Management: Maintain activity pace and energy levels",
+                    "conflictResolution": "Conflict Resolution: Handle disagreements and tensions"
+                }
+            },
+            "evaluation": {
+                "title": "Workshop Evaluation",
+                "description": "Measure workshop effectiveness and participant learning outcomes",
+                "methods": {
+                    "feedbackForms": "Feedback Forms: Collect participant evaluations of the experience",
+                    "skillAssessment": "Skill Assessment: Test mastery of specific design thinking abilities",
+                    "portfolioReview": "Portfolio Review: Evaluate prototypes and solutions created by participants",
+                    "followUpSurveys": "Follow-up Surveys: Track long-term impact and application"
+                }
+            }
+        }
+    },
+    "tracks": {
+        "foundations": "Foundations",
+        "designProcess": "Design Process", 
+        "workshopDesign": "Workshop Design",
+        "aiTechnology": "AI & Technology",
+        "caseStudies": "Case Studies",
+        "professionalGrowth": "Professional Growth"
+    },
+    "community": {
+        "title": "CreateX Community",
+        "description": "Connect with fellow facilitators, share experiences, and grow together in the CreateX ecosystem.",
+        "welcomeMessage": "Welcome to the CreateX Community - where innovation meets collaboration",
+        "connectAndGrow": "Connect, Learn, and Grow Together",
+        "connectDescription": "Join a vibrant community of facilitators, entrepreneurs, and change-makers using CreateX methodologies to drive innovation and create positive impact.",
+        "whyJoin": "Why Join Our Community?",
+        "peerLearning": {
+            "title": "Peer Learning",
+            "description": "Learn from experienced facilitators and share your own insights through collaborative discussions and knowledge exchange."
+        },
+        "resourceSharing": {
+            "title": "Resource Sharing", 
+            "description": "Access exclusive templates, case studies, and best practices shared by community members from around the world."
+        },
+        "liveEvents": {
+            "title": "Live Events",
+            "description": "Participate in monthly webinars, workshops, and networking events to stay updated with the latest in facilitation."
+        },
+        "mentorship": {
+            "title": "Mentorship Programs",
+            "description": "Connect with experienced mentors or become a mentor yourself to help others grow in their facilitation journey."
+        },
+        "communityStats": "Community Highlights",
+        "totalMembers": "Active Members",
+        "countriesRepresented": "Countries Represented", 
+        "workshopsHosted": "Workshops Hosted",
+        "resourcesShared": "Resources Shared",
+        "getStarted": "Get Started Today",
+        "joinToday": "Join Today",
+        "browseDiscussions": "Browse Discussions"
+    },
+    "common": {
+        "chapter": "Chapter",
+        "minutes": "minutes",
+        "beginner": "Beginner", 
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "individual": "Individual",
+        "team": "Team",
+        "loading": "Loading...",
+        "error": "Error",
+        "retry": "Retry",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel",
+        "continue": "Continue",
+        "complete": "Complete",
+        "back": "Back",
+        "forward": "Forward",
+        "menu": "Menu",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "view": "View",
+        "edit": "Edit",
+        "delete": "Delete",
+        "create": "Create",
+        "update": "Update",
+        "submit": "Submit",
+        "reset": "Reset",
+        "clear": "Clear",
+        "apply": "Apply",
+        "confirm": "Confirm",
+        "success": "Success",
+        "warning": "Warning",
+        "info": "Information",
+        "help": "Help",
+        "support": "Support",
+        "contact": "Contact",
+        "about": "About",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "cookies": "Cookies",
+        "settings": "Settings",
+        "profile": "Profile",
+        "account": "Account",
+        "logout": "Logout",
+        "login": "Login",
+        "register": "Register",
+        "forgotPassword": "Forgot Password",
+        "rememberMe": "Remember Me",
+        "email": "Email",
+        "password": "Password",
+        "username": "Username",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "fullName": "Full Name",
+        "phone": "Phone",
+        "address": "Address",
+        "city": "City",
+        "country": "Country",
+        "language": "Language",
+        "theme": "Theme",
+        "lightMode": "Light Mode",
+        "darkMode": "Dark Mode",
+        "systemMode": "System Mode"
+    }
+}
