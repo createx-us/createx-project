@@ -1,0 +1,29 @@
+{
+    "name": "createx-facilitator-guide-workers",
+    "version": "1.0.0",
+    "description": "Cloudflare Workers API for CreateX Facilitator Guide",
+    "main": "api/index.ts",
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy",
+        "db:migrate": "wrangler d1 migrations apply createx-cms --local",
+        "db:migrate:prod": "wrangler d1 migrations apply createx-cms",
+        "db:create": "wrangler d1 create createx-cms",
+        "db:info": "wrangler d1 info createx-cms",
+        "logs": "wrangler tail",
+        "type-check": "tsc --noEmit"
+    },
+    "dependencies": {
+        "hono": "^4.0.0",
+        "@hono/node-server": "^1.8.2"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20240208.0",
+        "@types/node": "^20.10.0",
+        "typescript": "^5.3.0",
+        "wrangler": "^3.28.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
