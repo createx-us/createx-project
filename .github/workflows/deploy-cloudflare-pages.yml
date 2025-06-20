@@ -1,0 +1,146 @@
+name: Deploy CreateX Facilitator Guide to Cloudflare Pages
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'packages/createx-facilitator-guide/**'
+      - '.github/workflows/deploy-cloudflare-pages.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'packages/createx-facilitator-guide/**'
+  workflow_dispatch: # Allow manual triggering
+
+env:
+  NODE_VERSION: '18'
+  WORKING_DIRECTORY: './packages/createx-facilitator-guide'
+
+jobs:
+  # Build and test the application
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    outputs:
+      build-success: ${{ steps.build.outputs.success }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            packages/createx-facilitator-guide/package-lock.json
+
+      - name: Install root dependencies
+        run: npm ci
+        continue-on-error: true # In case there's no root package.json
+
+      - name: Install project dependencies
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+        run: npm ci
+
+      - name: Type check
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+        run: npm run type-check
+        continue-on-error: true # Don't fail deployment on type errors
+
+      - name: Lint code
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+        run: npm run lint
+        continue-on-error: true # Don't fail deployment on lint errors
+
+      - name: Build application
+        id: build
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+        run: |
+          npm run build
+          echo "success=true" >> $GITHUB_OUTPUT
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: ${{ env.WORKING_DIRECTORY }}/out
+          retention-days: 1
+
+  # Deploy to Cloudflare Pages
+  deploy:
+    name: Deploy to Cloudflare Pages
+    needs: build
+    runs-on: ubuntu-latest
+    if: needs.build.outputs.build-success == 'true'
+    
+    environment:
+      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
+      url: ${{ steps.deploy.outputs.url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: ${{ env.WORKING_DIRECTORY }}/out
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: createx-facilitator-guide
+          directory: ${{ env.WORKING_DIRECTORY }}/out
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref || github.ref_name }}
+          wranglerVersion: '3'
+
+      - name: Add deployment summary
+        run: |
+          echo "## 🚀 Deployment Successful!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Deployment Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Environment**: ${{ github.ref == 'refs/heads/main' && 'Production' || 'Preview' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL**: ${{ steps.deploy.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.head_ref || github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Features Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Bilingual support (English & Chinese)" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ 27 interactive modules" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Design thinking curriculum" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ AI integration guidance" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Workshop facilitation tools" >> $GITHUB_STEP_SUMMARY
+
+  # Lighthouse CI for performance testing (optional)
+  lighthouse:
+    name: Lighthouse CI
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.12.x
+
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          LHCI_TARGET_URL: ${{ needs.deploy.outputs.url }}

@@ -6,11 +6,10 @@ import AdminPanel from './AdminPanel';
 import { useBuildSystem, useTranslation } from '../lib/hooks';
 
 interface ToolbarProps {
-    // Optional module ID that is currently being viewed
     currentModule?: string;
 }
 
-export default function ContentToolbar(_props: ToolbarProps) {
+export default function ContentToolbar({ currentModule }: ToolbarProps) {
     const [showAdmin, setShowAdmin] = useState(false);
     const { buildSite, buildStatus, buildLog } = useBuildSystem();
     const { currentLanguage, setCurrentLanguage } = useTranslation();
@@ -56,9 +55,6 @@ export default function ContentToolbar(_props: ToolbarProps) {
                                 className="appearance-none bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent cursor-pointer"
                             >
                                 <option value="en">🇺🇸 EN</option>
-                                <option value="es">🇪🇸 ES</option>
-                                <option value="fr">🇫🇷 FR</option>
-                                <option value="de">🇩🇪 DE</option>
                                 <option value="zh">🇨🇳 ZH</option>
                             </select>
                             <Globe className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />

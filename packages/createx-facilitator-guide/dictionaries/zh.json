@@ -10,8 +10,8 @@
         "getStarted": "开始学习"
     },
     "home": {
-        "title": "AI增强设计思维",
-        "subtitle": "变革学习方式",
+        "title": "变革学习方式",
+        "subtitle": "AI增强设计思维",
         "description": "为使用CreateX协议的工作坊引导师和社区领导者提供的综合指南。通过27个互动模块掌握设计思维、AI集成和变革性引导技能。",
         "outcomePromise": "学习承诺：完成本指南后，您将能够设计、引导和评估完整的CreateX工作坊，在每个阶段都能熟练地集成AI技术。",
         "startLearning": "开始学习",
@@ -23,7 +23,49 @@
         "readyToTransform": "准备好变革您的引导实践了吗？",
         "readyToTransformDescription": "加入已经在使用CreateX方法论创造变革性学习体验的数千名引导师。",
         "startYourJourney": "开启您的旅程",
-        "joinCommunity": "加入社区"
+        "joinCommunity": "加入社区",
+        "creativeConfidence": {
+            "title": "创造性自信",
+            "description": "掌握创造力的心理学和神经科学。通过经过验证的技术和AI放大，在个人和团队层面建立自信。",
+            "exploreChapter": "探索第3章"
+        },
+        "facilitationSkills": {
+            "title": "引导技能",
+            "description": "学习核心沟通微技能、心理安全技术，以及如何有效管理团队动态。",
+            "exploreChapter": "探索第17章"
+        },
+        "aiIntegration": {
+            "title": "AI集成",
+            "description": "掌握AI增强的引导技巧、提示制作框架，以及在工作坊中负责任使用AI的道德准则。",
+            "exploreChapter": "探索第18章"
+        },
+        "learningTracks": "学习轨道",
+        "advancedTopics": "高级主题",
+        "track1": {
+            "title": "轨道1：基础（第1-5章）",
+            "description": "创造力原理、设计思维历史、创造性自信、CreateX使命和引导师思维模式。"
+        },
+        "track2": {
+            "title": "轨道2：设计过程（第6-14章）",
+            "description": "从研究和同理心到实施和反思的完整设计思维方法论。"
+        },
+        "track3": {
+            "title": "轨道3：工作坊设计（第15-17章）",
+            "description": "范围和后勤、议程设计，以及有效工作坊的核心引导技能。"
+        },
+        "track4": {
+            "title": "轨道4：AI与技术（第18-20章）",
+            "description": "AI集成手册、实时故障排除，以及捕获和分享成果。"
+        },
+        "track5": {
+            "title": "轨道5：案例研究（第21-24章）",
+            "description": "真实世界应用、分析和KPI，以及在不同情境中测量影响。"
+        },
+        "track6": {
+            "title": "轨道6：专业成长（第25-27章）",
+            "description": "认证路径、个人品牌建设，以及加入CreateX实践社区。"
+        },
+        "facilitatorGuideModules": "引导师指南模块"
     },
     "modules": {
         "title": "引导师指南模块",
@@ -335,6 +377,55 @@
         "save": "保存",
         "cancel": "取消",
         "continue": "继续",
-        "complete": "完成"
+        "complete": "完成",
+        "back": "返回",
+        "forward": "前进",
+        "menu": "菜单",
+        "search": "搜索",
+        "filter": "筛选",
+        "sort": "排序",
+        "view": "查看",
+        "edit": "编辑",
+        "delete": "删除",
+        "create": "创建",
+        "update": "更新",
+        "submit": "提交",
+        "reset": "重置",
+        "clear": "清除",
+        "apply": "应用",
+        "confirm": "确认",
+        "success": "成功",
+        "warning": "警告",
+        "info": "信息",
+        "help": "帮助",
+        "support": "支持",
+        "contact": "联系",
+        "about": "关于",
+        "privacy": "隐私",
+        "terms": "条款",
+        "cookies": "Cookie",
+        "settings": "设置",
+        "profile": "个人资料",
+        "account": "账户",
+        "logout": "退出",
+        "login": "登录",
+        "register": "注册",
+        "forgotPassword": "忘记密码",
+        "rememberMe": "记住我",
+        "email": "邮箱",
+        "password": "密码",
+        "username": "用户名",
+        "firstName": "名",
+        "lastName": "姓",
+        "fullName": "全名",
+        "phone": "电话",
+        "address": "地址",
+        "city": "城市",
+        "country": "国家",
+        "language": "语言",
+        "theme": "主题",
+        "lightMode": "浅色模式",
+        "darkMode": "深色模式",
+        "systemMode": "系统模式"
     }
 }

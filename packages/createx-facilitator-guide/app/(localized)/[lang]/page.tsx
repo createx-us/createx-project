@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { ArrowRight, BookOpen, Users, Lightbulb, Zap } from 'lucide-react';
 import { getDictionary } from '@/lib/i18n';
 
-export const dynamic = 'force-dynamic';
-
 export default async function HomePage({
   params
 }: {
