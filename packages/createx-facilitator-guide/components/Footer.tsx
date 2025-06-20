@@ -44,34 +44,20 @@ export function Footer() {
                         <ul className="space-y-3">
                             <li>
                                 <a
+                                    href="https://www.createx.us"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                                >
+                                    CreateX Home
+                                </a>
+                            </li>
+                            <li>
+                                <a
                                     href="/modules"
                                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                                 >
                                     Facilitator Modules
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/workshops"
-                                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                                >
-                                    Workshops
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/toolkit"
-                                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                                >
-                                    Toolkit
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/research"
-                                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                                >
-                                    Research
                                 </a>
                             </li>
                         </ul>

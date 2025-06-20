@@ -2,11 +2,6 @@
     "navigation": {
         "home": "Home",
         "modules": "Modules",
-        "workshops": "Workshops",
-        "toolkit": "Toolkit",
-        "research": "Research",
-        "community": "Community",
-        "about": "About",
         "getStarted": "Get Started"
     },
     "home": {

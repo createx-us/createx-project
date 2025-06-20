@@ -2,11 +2,6 @@
     "navigation": {
         "home": "首页",
         "modules": "模块",
-        "workshops": "工作坊",
-        "toolkit": "工具包",
-        "research": "研究",
-        "community": "社区",
-        "about": "关于我们",
         "getStarted": "开始学习"
     },
     "home": {

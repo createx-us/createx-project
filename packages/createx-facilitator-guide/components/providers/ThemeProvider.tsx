@@ -54,18 +54,17 @@ export function ThemeProvider({
                 : 'light';
 
             root.classList.add(systemTheme);
-            return;
+        } else {
+            root.classList.add(theme);
         }
-
-        root.classList.add(theme);
-    }, [theme, mounted]);
+        
+        // Save to localStorage
+        localStorage.setItem(storageKey, theme);
+    }, [theme, mounted, storageKey]);
 
     const value = {
         theme,
         setTheme: (newTheme: Theme) => {
-            if (mounted) {
-                localStorage.setItem(storageKey, newTheme);
-            }
             setTheme(newTheme);
         },
     };

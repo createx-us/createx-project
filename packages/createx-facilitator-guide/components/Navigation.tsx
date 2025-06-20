@@ -2,19 +2,34 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { useProgress } from '@/components/providers/ProgressProvider';
 import { LanguageSelector } from '@/components/LanguageSelector';
-import { BookOpen, Menu, X, Sun, Moon, Settings, Users, Award, FileText } from 'lucide-react';
+import { BookOpen, Menu, X, Sun, Moon, Home } from 'lucide-react';
 
 export function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
     const { theme, setTheme } = useTheme();
     const { getTotalProgress } = useProgress();
+    const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light');
+
+    // Determine the actual current theme (resolve 'system' to 'light' or 'dark')
+    useEffect(() => {
+        if (theme === 'system') {
+            const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setCurrentTheme(isDark ? 'dark' : 'light');
+        } else {
+            setCurrentTheme(theme as 'light' | 'dark');
+        }
+    }, [theme]);
 
     const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
+        if (currentTheme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
     };
 
     const navItems: Array<{
@@ -23,12 +38,8 @@ export function Navigation() {
         icon: React.ComponentType<{ className?: string }>;
         external?: boolean;
     }> = [
+            { href: 'https://www.createx.us', label: 'Home', icon: Home, external: true },
             { href: '/modules', label: 'Modules', icon: BookOpen },
-            { href: '/workshops', label: 'Workshops', icon: Users },
-            { href: '/toolkit', label: 'Toolkit', icon: FileText },
-            { href: '/research', label: 'Research', icon: Settings },
-            { href: '/community', label: 'Community', icon: Users },
-            { href: 'https://createx.us/about-us/', label: 'About', icon: Award, external: true },
         ];
 
     return (
@@ -94,7 +105,7 @@ export function Navigation() {
                             onClick={toggleTheme}
                             className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                         >
-                            {theme === 'light' ? (
+                            {currentTheme === 'light' ? (
                                 <Moon className="w-4 h-4 text-gray-600 dark:text-gray-300" />
                             ) : (
                                 <Sun className="w-4 h-4 text-gray-600 dark:text-gray-300" />
@@ -154,7 +165,7 @@ export function Navigation() {
                             onClick={toggleTheme}
                             className="w-full flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                         >
-                            {theme === 'light' ? (
+                            {currentTheme === 'light' ? (
                                 <>
                                     <Moon className="w-5 h-5" />
                                     <span>Dark Mode</span>
