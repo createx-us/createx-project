@@ -1,5 +1,5 @@
 // Configuration for all modules with their IDs and section counts
-export const MODULE_CONFIG = {
+const moduleConfigData = {
   'creativity-fundamentals': {
     id: 'creativity-fundamentals',
     name: 'Creativity Fundamentals',
@@ -162,7 +162,9 @@ export const MODULE_CONFIG = {
     chapter: 27,
     totalSections: 8
   }
-} as const;
+};
+
+export const MODULE_CONFIG = moduleConfigData;
 
 export type ModuleId = keyof typeof MODULE_CONFIG;
 

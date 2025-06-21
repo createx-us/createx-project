@@ -1,6 +1,5 @@
 import React from 'react';
-import { getDictionary } from '@/lib/i18n';
-import { Download, FileText, Star, Clock, ExternalLink } from 'lucide-react';
+import { Download, FileText } from 'lucide-react';
 
 // Simple resource interface to avoid serialization issues
 interface Resource {
@@ -12,14 +11,11 @@ interface Resource {
     downloadUrl: string;
 }
 
-export default async function ResourcesPage({
+export default function LearningResourcesPage({
     params
 }: {
     params: { lang: string }
 }) {
-    // Get dictionary based on the language parameter
-    const dictionary = await getDictionary(params.lang as any);
-
     // Define resources as a simple constant to avoid serialization issues
     const resources: Resource[] = [
         {
@@ -60,7 +56,7 @@ export default async function ResourcesPage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="text-center mb-12">
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                    Resources & Downloads
+                    Learning Resources
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                     Access curated templates, tools, and materials to enhance your facilitation practice.
