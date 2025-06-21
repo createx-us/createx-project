@@ -2,6 +2,8 @@
     "navigation": {
         "home": "Home",
         "modules": "Modules",
+        "research": "Research",
+        "community": "Community",
         "getStarted": "Get Started"
     },
     "home": {
@@ -13,7 +15,7 @@
         "guideOverview": "Guide Overview",
         "whatYoullMaster": "What You'll Master",
         "whatYoullMasterDescription": "From creativity fundamentals to AI integration, this guide covers everything you need to become an expert facilitator.",
-        "learningPathOverview": "Learning Path Overview", 
+        "learningPathOverview": "Learning Path Overview",
         "learningPathDescription": "27 comprehensive modules organized into 6 learning tracks for systematic skill development.",
         "readyToTransform": "Ready to Transform Your Facilitation Practice?",
         "readyToTransformDescription": "Join thousands of facilitators who are already using CreateX methodologies to create transformational learning experiences.",
@@ -25,7 +27,7 @@
             "exploreChapter": "Explore Chapter 3"
         },
         "facilitationSkills": {
-            "title": "Facilitation Skills", 
+            "title": "Facilitation Skills",
             "description": "Learn core communication micro-skills, psychological safety techniques, and how to manage group dynamics effectively.",
             "exploreChapter": "Explore Chapter 17"
         },
@@ -295,27 +297,52 @@
                 "empathize": {
                     "title": "Empathize",
                     "description": "Understand users' needs, thoughts, and motivations",
-                    "activities": ["User Interviews", "Observational Research", "Empathy Maps", "Personas"]
+                    "activities": [
+                        "User Interviews",
+                        "Observational Research",
+                        "Empathy Maps",
+                        "Personas"
+                    ]
                 },
                 "define": {
                     "title": "Define",
                     "description": "Reframe problems based on user insights",
-                    "activities": ["Problem Statements", "Point of View", "How Might We", "Opportunity Identification"]
+                    "activities": [
+                        "Problem Statements",
+                        "Point of View",
+                        "How Might We",
+                        "Opportunity Identification"
+                    ]
                 },
                 "ideate": {
-                    "title": "Ideate", 
+                    "title": "Ideate",
                     "description": "Generate innovative ideas to solve problems",
-                    "activities": ["Brainstorming", "Mind Mapping", "Idea Evaluation", "Concept Selection"]
+                    "activities": [
+                        "Brainstorming",
+                        "Mind Mapping",
+                        "Idea Evaluation",
+                        "Concept Selection"
+                    ]
                 },
                 "prototype": {
                     "title": "Prototype",
                     "description": "Quickly build preliminary versions of ideas",
-                    "activities": ["Paper Prototypes", "Digital Models", "Role Playing", "Storyboards"]
+                    "activities": [
+                        "Paper Prototypes",
+                        "Digital Models",
+                        "Role Playing",
+                        "Storyboards"
+                    ]
                 },
                 "test": {
                     "title": "Test",
                     "description": "Test prototypes with users and gather feedback",
-                    "activities": ["User Testing", "Feedback Collection", "Iterative Improvement", "Solution Validation"]
+                    "activities": [
+                        "User Testing",
+                        "Feedback Collection",
+                        "Iterative Improvement",
+                        "Solution Validation"
+                    ]
                 }
             }
         },
@@ -357,7 +384,7 @@
     },
     "tracks": {
         "foundations": "Foundations",
-        "designProcess": "Design Process", 
+        "designProcess": "Design Process",
         "workshopDesign": "Workshop Design",
         "aiTechnology": "AI & Technology",
         "caseStudies": "Case Studies",
@@ -375,7 +402,7 @@
             "description": "Learn from experienced facilitators and share your own insights through collaborative discussions and knowledge exchange."
         },
         "resourceSharing": {
-            "title": "Resource Sharing", 
+            "title": "Resource Sharing",
             "description": "Access exclusive templates, case studies, and best practices shared by community members from around the world."
         },
         "liveEvents": {
@@ -388,7 +415,7 @@
         },
         "communityStats": "Community Highlights",
         "totalMembers": "Active Members",
-        "countriesRepresented": "Countries Represented", 
+        "countriesRepresented": "Countries Represented",
         "workshopsHosted": "Workshops Hosted",
         "resourcesShared": "Resources Shared",
         "getStarted": "Get Started Today",
@@ -398,7 +425,7 @@
     "common": {
         "chapter": "Chapter",
         "minutes": "minutes",
-        "beginner": "Beginner", 
+        "beginner": "Beginner",
         "intermediate": "Intermediate",
         "advanced": "Advanced",
         "individual": "Individual",

@@ -3,16 +3,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { useProgress } from '@/components/providers/ProgressProvider';
 import { LanguageSelector } from '@/components/LanguageSelector';
-import { BookOpen, Menu, X, Sun, Moon, Home } from 'lucide-react';
+import { BookOpen, Menu, X, Sun, Moon, Home, Settings, Users, } from 'lucide-react';
+import { locales, defaultLocale, type Locale } from '@/lib/i18n';
 
 export function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
     const { theme, setTheme } = useTheme();
     const { getTotalProgress } = useProgress();
     const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light');
+    const pathname = usePathname();
+
+    // Get current locale from pathname
+    const pathParts = pathname?.split('/') || [];
+    const pathLocale = pathParts.length > 1 ? pathParts[1] : '';
+    const currentLocale = locales.includes(pathLocale as Locale) ? pathLocale as Locale : defaultLocale;
 
     // Determine the actual current theme (resolve 'system' to 'light' or 'dark')
     useEffect(() => {
@@ -32,15 +40,75 @@ export function Navigation() {
         }
     };
 
+    // Navigation items with localized routes and labels
     const navItems: Array<{
         href: string;
-        label: string;
+        labelKey: keyof typeof defaultLabels;
         icon: React.ComponentType<{ className?: string }>;
         external?: boolean;
     }> = [
-            { href: 'https://www.createx.us', label: 'Home', icon: Home, external: true },
-            { href: '/modules', label: 'Modules', icon: BookOpen },
+            { href: 'https://dt.createx.us', labelKey: 'home', icon: Home, external: true },
+            { href: `/${currentLocale}/research`, labelKey: 'research', icon: Settings, external: false },
+            { href: `/${currentLocale}/community`, labelKey: 'community', icon: Users, external: false },
+            { href: `/${currentLocale}/modules`, labelKey: 'modules', icon: BookOpen, external: false },
         ];
+
+    // Default labels to ensure we always have something to display
+    const defaultLabels = {
+        home: 'Home',
+        research: 'Research',
+        community: 'Community',
+        modules: 'Modules'
+    };
+
+    // Function to get localized label
+    const getLabel = (labelKey: keyof typeof defaultLabels): string => {
+        // For now, we'll use default English labels
+        // In a future update, we can load the dictionary client-side 
+        // or pass it as a prop from parent components
+        const labels = {
+            'en': {
+                home: 'Home',
+                research: 'Research',
+                community: 'Community',
+                modules: 'Modules'
+            },
+            'zh': {
+                home: '首页',
+                research: '研究',
+                community: '社区',
+                modules: '模块'
+            }
+        };
+
+        return labels[currentLocale]?.[labelKey] || defaultLabels[labelKey];
+    };
+
+    // Function to get theme labels
+    const getThemeLabel = (theme: 'light' | 'dark'): string => {
+        const themeLabels = {
+            'en': {
+                light: 'Light Mode',
+                dark: 'Dark Mode'
+            },
+            'zh': {
+                light: '浅色模式',
+                dark: '深色模式'
+            }
+        };
+
+        return themeLabels[currentLocale]?.[theme] || themeLabels['en'][theme];
+    };
+
+    // Function to get progress label
+    const getProgressLabel = (): string => {
+        const progressLabels = {
+            'en': 'completed',
+            'zh': '已完成'
+        };
+
+        return progressLabels[currentLocale] || progressLabels['en'];
+    };
 
     return (
         <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
@@ -57,8 +125,8 @@ export function Navigation() {
                             <Image
                                 src="https://createx.us/content/images/2025/06/CreateX-Logo_2025-05.png"
                                 alt="CreateX Logo"
-                                width={48}
-                                height={48}
+                                width={55}
+                                height={55}
                                 className="object-contain"
                             />
                         </a>
@@ -68,6 +136,7 @@ export function Navigation() {
                     <div className="hidden md:flex items-center space-x-8">
                         {navItems.map((item) => {
                             const IconComponent = item.icon;
+                            const label = getLabel(item.labelKey);
                             return item.external ? (
                                 <a
                                     key={item.href}
@@ -77,7 +146,7 @@ export function Navigation() {
                                     className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                                 >
                                     <IconComponent className="w-4 h-4" />
-                                    <span>{item.label}</span>
+                                    <span>{label}</span>
                                 </a>
                             ) : (
                                 <Link
@@ -86,7 +155,7 @@ export function Navigation() {
                                     className="flex items-center space-x-1 text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                                 >
                                     <IconComponent className="w-4 h-4" />
-                                    <span>{item.label}</span>
+                                    <span>{label}</span>
                                 </Link>
                             );
                         })}
@@ -94,7 +163,7 @@ export function Navigation() {
                         {/* Progress Indicator */}
                         <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
                             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                            <span>{getTotalProgress()} completed</span>
+                            <span>{getTotalProgress()} {getProgressLabel()}</span>
                         </div>
 
                         {/* Language Selector */}
@@ -132,6 +201,7 @@ export function Navigation() {
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
                         {navItems.map((item) => {
                             const IconComponent = item.icon;
+                            const label = getLabel(item.labelKey);
                             return item.external ? (
                                 <a
                                     key={item.href}
@@ -142,7 +212,7 @@ export function Navigation() {
                                     onClick={() => setIsOpen(false)}
                                 >
                                     <IconComponent className="w-5 h-5" />
-                                    <span>{item.label}</span>
+                                    <span>{label}</span>
                                 </a>
                             ) : (
                                 <Link
@@ -152,13 +222,13 @@ export function Navigation() {
                                     onClick={() => setIsOpen(false)}
                                 >
                                     <IconComponent className="w-5 h-5" />
-                                    <span>{item.label}</span>
+                                    <span>{label}</span>
                                 </Link>
                             );
                         })}
 
                         <div className="px-3 py-2 text-sm text-gray-600 dark:text-gray-300">
-                            Progress: {getTotalProgress()} completed
+                            Progress: {getTotalProgress()} {getProgressLabel()}
                         </div>
 
                         <button
@@ -168,12 +238,12 @@ export function Navigation() {
                             {currentTheme === 'light' ? (
                                 <>
                                     <Moon className="w-5 h-5" />
-                                    <span>Dark Mode</span>
+                                    <span>{getThemeLabel('dark')}</span>
                                 </>
                             ) : (
                                 <>
                                     <Sun className="w-5 h-5" />
-                                    <span>Light Mode</span>
+                                    <span>{getThemeLabel('light')}</span>
                                 </>
                             )}
                         </button>

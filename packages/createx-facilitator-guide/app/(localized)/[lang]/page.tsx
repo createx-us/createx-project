@@ -87,15 +87,14 @@ export default async function HomePage({
               <div className="flex items-center mb-4">
                 <Lightbulb className="h-8 w-8 text-primary-600 dark:text-primary-400 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Creative Confidence
+                  {dictionary.home.creativeConfidence.title}
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Master the psychology and neuroscience of creativity. Build confidence at individual and team levels
-                using proven techniques and AI amplification.
+                {dictionary.home.creativeConfidence.description}
               </p>
               <Link href={`/${params.lang}/modules/creative-confidence`} className="text-primary-600 dark:text-primary-400 font-medium hover:underline">
-                Explore Chapter 3 →
+                {dictionary.home.creativeConfidence.exploreChapter} →
               </Link>
             </div>
 
@@ -103,15 +102,14 @@ export default async function HomePage({
               <div className="flex items-center mb-4">
                 <Users className="h-8 w-8 text-accent-600 dark:text-accent-400 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Facilitation Skills
+                  {dictionary.home.facilitationSkills.title}
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Learn core communication micro-skills, psychological safety techniques, and how to manage
-                group dynamics effectively.
+                {dictionary.home.facilitationSkills.description}
               </p>
               <Link href={`/${params.lang}/modules/facilitation-skills`} className="text-accent-600 dark:text-accent-400 font-medium hover:underline">
-                Explore Chapter 17 →
+                {dictionary.home.facilitationSkills.exploreChapter} →
               </Link>
             </div>
 
@@ -119,15 +117,14 @@ export default async function HomePage({
               <div className="flex items-center mb-4">
                 <Zap className="h-8 w-8 text-success-600 dark:text-success-400 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  AI Integration
+                  {dictionary.home.aiIntegration.title}
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Master AI-enhanced facilitation moves, prompt-crafting frameworks, and ethical guidelines
-                for responsible AI use in workshops.
+                {dictionary.home.aiIntegration.description}
               </p>
               <Link href={`/${params.lang}/modules/ai-integration`} className="text-success-600 dark:text-success-400 font-medium hover:underline">
-                Explore Chapter 18 →
+                {dictionary.home.aiIntegration.exploreChapter} →
               </Link>
             </div>
           </div>
@@ -150,7 +147,7 @@ export default async function HomePage({
             {/* Learning Tracks */}
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Learning Tracks
+                {dictionary.home.learningTracks}
               </h3>
 
               <div className="space-y-4">
@@ -185,7 +182,7 @@ export default async function HomePage({
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Advanced Topics
+                {dictionary.home.advancedTopics}
               </h3>
 
               <div className="space-y-4">

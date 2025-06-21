@@ -28,14 +28,16 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         setMounted(true);
         // Load progress from localStorage only on client side
-        const saved = localStorage.getItem('createx-facilitator-progress');
+        const saved = localStorage.getItem('createx-old-progress');
         if (saved) {
             try {
                 const parsed = JSON.parse(saved);
-                setProgress(parsed.map((p: any) => ({
-                    ...p,
-                    completedAt: p.completedAt ? new Date(p.completedAt) : undefined,
-                })));
+                if (Array.isArray(parsed)) {
+                    setProgress(parsed.map((p: any) => ({
+                        ...p,
+                        completedAt: p.completedAt ? new Date(p.completedAt) : undefined,
+                    })));
+                }
             } catch (error) {
                 console.error('Failed to parse saved progress:', error);
             }
@@ -45,7 +47,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         if (!mounted) return;
         // Save progress to localStorage only on client side
-        localStorage.setItem('createx-facilitator-progress', JSON.stringify(progress));
+        localStorage.setItem('createx-old-progress', JSON.stringify(progress));
     }, [progress, mounted]);
 
     const markComplete = (moduleId: string, chapterId: string) => {

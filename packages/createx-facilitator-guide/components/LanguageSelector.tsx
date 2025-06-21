@@ -11,18 +11,18 @@ export function LanguageSelector() {
     const [isOpen, setIsOpen] = useState(false);
 
     // Get current locale from pathname
-    const pathParts = pathname.split('/');
+    const pathParts = pathname?.split('/') || [];
     const pathLocale = pathParts.length > 1 ? pathParts[1] : '';
     const currentLocale = locales.includes(pathLocale as Locale) ? pathLocale as Locale : defaultLocale;
 
     const handleLanguageChange = (newLocale: Locale) => {
         // Create new path with the selected locale
         let newPath;
-        
+
         if (newLocale === defaultLocale) {
             // For default locale, just remove the locale segment
-            const pathWithoutLocale = pathParts.length > 1 && locales.includes(pathParts[1] as Locale) 
-                ? '/' + pathParts.slice(2).join('/') 
+            const pathWithoutLocale = pathParts.length > 1 && locales.includes(pathParts[1] as Locale)
+                ? '/' + pathParts.slice(2).join('/')
                 : pathname;
             newPath = pathWithoutLocale || '/';
         } else {
@@ -41,7 +41,7 @@ export function LanguageSelector() {
         if (newPath.length > 1 && newPath.endsWith('/')) {
             newPath = newPath.slice(0, -1);
         }
-        
+
         router.push(newPath);
         setIsOpen(false);
     };
@@ -74,8 +74,8 @@ export function LanguageSelector() {
                                     key={locale}
                                     onClick={() => handleLanguageChange(locale)}
                                     className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${locale === currentLocale
-                                            ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
-                                            : 'text-gray-700 dark:text-gray-300'
+                                        ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
+                                        : 'text-gray-700 dark:text-gray-300'
                                         }`}
                                 >
                                     <div className="flex items-center justify-between">

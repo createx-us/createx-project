@@ -1,0 +1,79 @@
+At its simplest, creativity is the capacity to generate ideas, artifacts, or actions that are
+simultaneously novel and appropriate within a given context. Each discipline, however, colors
+the edges of that definition:
+Lens Core Insight
+Psychology Creativity blends divergent thinking (fluency, flexibility, originality,
+elaboration) with convergent judgment to select promising options.
+(Guilford, 1950; Runco, 2004)
+Neuroscience fMRI studies link creative idea incubation to dynamic switching
+between the default‑mode network (daydreaming) and executive
+control network (evaluation).
+Anthropology Creativity is a social contract: Igbo “nkà,” Japanese “monozukuri,”
+and Silicon Valley “innovation” valorize different outputs, norms, and
+success criteria.
+Reflection Prompt ①
+Recall a moment when you produced something new and useful. Which of the three lenses above
+best explains why it “worked”? Jot down thoughts before moving on.
+1.2 Myths We Must Unlearn
+Myth Reality Design Implication
+15
+
+--- Page 16 ---
+1 · “Eureka is Breakthroughs emerge from Build slow hunch time into sprints
+instant.” iterative incubation and (e.g., overnight reflection).
+recombination.
+2 · “Only artists are Farmers invent irrigation hacks; Use broad case examples to inspire
+creative.” accountants design clever cross‑domain insight.
+macros.
+3 · “Constraints kill Thoughtful limits sharpen focus Introduce explicit constraint cards
+creativity.” and spur originality. during ideation (budget cap, carbon
+limit, etc.).
+1.3 Individual vs. Collective Creativity
+Individual insight can feel intoxicating, yet research shows cognitive diversity—differences in
+knowledge, heuristics, and perspectives—produces more adaptive solutions.
+Dimension Individual Collective
+Strength Fast, cohesive vision Heterogeneous idea pool
+Risk Blind spots, Coordination overhead, group‑think
+confirmation bias
+CreateX Solo reflection blocks Deliberate techniques: “Yes‑And” improv, brainwriting,
+Lever asynchronous idea boards
+Technique Spotlight — Brainwriting 6‑3‑5
+6 people · 3 ideas each · 5‑minute rounds → 108 idea seeds in 30 minutes. Use BoardX’s timed
+canvas and an AI summarizer to cluster outputs on the fly.
+1.4 The Role of AI in Human Creativity
+16
+
+--- Page 17 ---
+Large‑language models, generative imagery, and analytic copilots expand our ideational
+bandwidth but do not replace human judgment. Three complementarity modes:
+1. Spark: LLMs supply provocative starting points when the team is “stuck.”
+2. Stretch: AI simulations expose hidden edge cases and inspire bolder prototypes.
+3. Sharpen: Realtime critique (readability scores, bias flags) accelerates refinement.
+Ethics Watch: Creators remain accountable for truthfulness, bias mitigation, and contextual
+appropriateness of AI‑assisted content.
+1.5 Putting It into Practice
+1. Divergence Drill – Set a timer for 5 minutes and list as many uses as possible for a
+coffee mug. Stop at 30 seconds left and ask ChatGPT for five additional, unexpected
+uses. Observe overlaps and surprises.
+2. Constraint Remix – Take an existing product idea and force‑fit a new constraint (e.g.,
+“must be zero‑waste”). Note how the idea shifts.
+3. Collective Upgrade – Share your idea in a group, then run a “1‑2‑4‑All” session to
+evolve it. Compare solo vs. collective output.
+1.6 Key Takeaways
+● Creativity = Novelty × Usefulness relative to context.
+● Myths obscure the incremental, democratized nature of creative work.
+● Cognitive diversity and structured collaboration outperform lone‑genius models.
+● AI is a lever for sparking, stretching, and sharpening ideas—never a shortcut around
+human empathy and ethics.
+1.7 Field Notes & Further Reading
+17
+
+--- Page 18 ---
+● Books: “Creative Confidence” (Kelley & Kelley), “Wired to Create” (Kaufman & Gregoire)
+● Papers: Baas et al. (2008) “A meta‑analysis on the relationship between mood and
+creativity.”
+● Videos: IDEO’s “Deep Dive” (1999) shows early design‑thinking practice in action.
+● Podcast Episode: Hidden Brain — “Where Creativity Comes From” (Nov 2023).
+Facilitator Checklist
+☐ Debunk myths at kickoff ☐ Balance solo/collective exercises ☐ Introduce at least one
+AI‑augmented task ☐ Close with reflection on constraint benefits

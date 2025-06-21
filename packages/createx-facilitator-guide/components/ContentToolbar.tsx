@@ -65,8 +65,8 @@ export default function ContentToolbar({ currentModule }: ToolbarProps) {
                             onClick={handleBuild}
                             disabled={buildStatus === 'building'}
                             className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${buildStatus === 'building'
-                                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                                    : 'bg-purple-600 text-white hover:bg-purple-700'
+                                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                                : 'bg-purple-600 text-white hover:bg-purple-700'
                                 }`}
                             title="Build static site"
                         >
@@ -116,8 +116,8 @@ export default function ContentToolbar({ currentModule }: ToolbarProps) {
                             <div className="flex items-center justify-between">
                                 <span className="text-xs text-gray-600">Build Status</span>
                                 <span className={`text-xs font-medium ${buildStatus === 'building' ? 'text-blue-600' :
-                                        buildStatus === 'success' ? 'text-green-600' :
-                                            'text-red-600'
+                                    buildStatus === 'success' ? 'text-green-600' :
+                                        'text-red-600'
                                     }`}>
                                     {buildStatus}
                                 </span>

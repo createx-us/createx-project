@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
     // Use default locale for the main layout
     const locale = defaultLocale;
-    
+
     return (
         <html lang={locale} className="scroll-smooth">
             <body className={inter.className}>

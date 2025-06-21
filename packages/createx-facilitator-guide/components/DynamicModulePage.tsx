@@ -7,6 +7,7 @@ import { ModuleContent } from '@/lib/content';
 
 interface ModulePageProps {
     moduleId: string;
+    lang: string;
 }
 
 interface NavigationInfo {
@@ -62,7 +63,7 @@ const colorClasses = {
     }
 };
 
-export default function DynamicModulePage({ moduleId }: ModulePageProps) {
+export default function DynamicModulePage({ moduleId, lang }: ModulePageProps) {
     const [module, setModule] = useState<ModuleContent | null>(null);
     const [navigation, setNavigation] = useState<NavigationInfo>({});
     const [loading, setLoading] = useState(true);
@@ -235,7 +236,7 @@ export default function DynamicModulePage({ moduleId }: ModulePageProps) {
                 <div className="flex justify-between items-center pt-8 border-t border-gray-200 dark:border-gray-700">
                     {navigation.prev ? (
                         <Link
-                            href={`/modules/${navigation.prev.id}`}
+                            href={`/${lang}/modules/${navigation.prev.id}`}
                             className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
                         >
                             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -247,7 +248,7 @@ export default function DynamicModulePage({ moduleId }: ModulePageProps) {
 
                     {navigation.next && (
                         <Link
-                            href={`/modules/${navigation.next.id}`}
+                            href={`/${lang}/modules/${navigation.next.id}`}
                             className={`flex items-center ${colors.accent} hover:opacity-80 transition-opacity`}
                         >
                             Next: {navigation.next.title}

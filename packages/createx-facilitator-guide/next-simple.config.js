@@ -4,7 +4,7 @@ const nextConfig = {
     typescript: {
         ignoreBuildErrors: process.env.SKIP_TYPECHECK === 'true',
     },
-    
+
     // Skip ESLint during build to avoid blocking
     eslint: {
         ignoreDuringBuilds: true,

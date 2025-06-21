@@ -2,6 +2,8 @@
     "navigation": {
         "home": "首页",
         "modules": "模块",
+        "research": "研究",
+        "community": "社区",
         "getStarted": "开始学习"
     },
     "home": {
@@ -62,8 +64,12 @@
         },
         "facilitatorGuideModules": "引导师指南模块"
     },
+    "progress": {
+        "title": "您的学习进度"
+    },
     "modules": {
         "title": "引导师指南模块",
+        "subtitle": "通过分为6个学习轨道的27个综合模块，掌握设计思维、AI集成和变革性引导。",
         "description": "通过分为6个学习轨道的27个综合模块，掌握设计思维、AI集成和变革性引导。",
         "startModule": "开始模块",
         "reviewModule": "复习模块",
@@ -74,13 +80,23 @@
         "markComplete": "标记完成",
         "previous": "上一个",
         "next": "下一个",
-        "nextModule": "下一个模块",
+        "nextModule": "下一个模块",  
         "backToModules": "返回模块",
         "resources": "资源",
         "downloadTemplates": "下载模板",
         "discussionForum": "讨论论坛",
         "interactiveSection": "互动部分",
         "interactiveSectionDescription": "本部分包括实践练习和活动。",
+        "loadingModules": "加载模块中...",
+        "start": "开始",
+        "continue": "继续",
+        "review": "复习",
+        "sections": "章节",
+        "progress": "进度",
+        "continueYourLearning": "继续您的学习之旅",
+        "youveCompleted": "您已完成",
+        "modulesKeepUp": "个模块。继续保持出色的工作！",
+        "continueLearning": "继续学习",
         "creativityFundamentals": {
             "title": "创造力基础",
             "description": "探索创造力的本质、神话和科学基础，为有效的引导奠定基础。",
@@ -98,46 +114,477 @@
             }
         },
         "creativeConfidence": {
-            "title": "创造性自信",
-            "description": "建立个人和团队的创造性自信，克服创造性障碍。",
-            "introduction": "创造性自信是相信自己能够产生创新想法并实施创造性解决方案的信念。这不是天赋，而是可以培养的技能。",
+            "title": "创造性自信的科学",
+            "subtitle": "第3章",
+            "track": "基础",
+            "duration": "50分钟",
+            "difficulty": "中级",
+            "prerequisites": "第1章，第2章",
+            "description": "掌握创造力的心理学和神经科学。通过经过验证的技术和AI放大，在个人和团队层面建立自信。",
+            "introduction": "创造性自信是相信自己能够产生具有影响力的想法和解决方案的信念。本章探讨创造性自信的心理学和神经科学基础，为引导师提供基于证据的技术来培养个人和团队的这一关键能力。",
+            "overview": "创造性自信不仅仅是对自己想法感觉良好——它是一种可测量的心理状态，能够预测创造性表现。研究表明，具有更高创造性自信的人会：生成更多新颖想法、在面临创造性挑战时坚持更久、在工作中承担更多创造性风险、更有效地建构他人想法、从创造性挫折中恢复更快。",
             "learningObjectives": [
                 "理解创造性自信的心理学基础",
                 "学习创造性自信的测量技术",
                 "运用AI作为自信放大器",
                 "在个人和团队层面建立自信"
             ],
+            "whatIsCreativeConfidence": {
+                "title": "什么是创造性自信？",
+                "introduction": "创造性自信不仅仅是对自己想法感觉良好——它是一种可测量的心理状态，能够预测创造性表现。",
+                "researchFindings": "研究表明，具有更高创造性自信的人会：",
+                "benefits": [
+                    "在头脑风暴会议中生成更多新颖想法",
+                    "在面临创造性挑战时坚持更久",
+                    "在工作中承担更多创造性风险",
+                    "更有效地建构他人想法",
+                    "从创造性挫折中恢复更快"
+                ]
+            },
             "keyComponents": {
                 "title": "关键组成部分",
-                "selfEfficacy": "自我效能：相信自己能够执行创造性任务的能力",
-                "growthMindset": "成长心态：理解创造能力可以通过发展获得",
-                "toleranceAmbiguity": "容忍模糊性：对不确定性和不完整信息感到舒适",
-                "intrinsicMotivation": "内在动机：为个人满足而非外部奖励而创造的驱动力"
+                "selfEfficacy": {
+                    "title": "自我效能",
+                    "description": "相信自己能够执行创造性任务的能力"
+                },
+                "growthMindset": {
+                    "title": "成长心态",
+                    "description": "理解创造能力可以通过发展获得"
+                },
+                "toleranceAmbiguity": {
+                    "title": "容忍模糊性",
+                    "description": "对不确定性和不完整信息感到舒适"
+                },
+                "intrinsicMotivation": {
+                    "title": "内在动机",
+                    "description": "为个人满足而非外部奖励而创造的驱动力"
+                }
             },
             "psychologicalFoundations": {
                 "title": "心理学基础",
+                "introduction": "创造性自信建立在引导师必须理解和培养的四个心理支柱之上：",
                 "pillar1": {
-                    "title": "好奇心与惊奇",
-                    "description": "探索、质疑假设、寻求新颖视角的驱动力。好奇心是创造性思维的燃料。"
+                    "title": "支柱1：好奇心与惊奇",
+                    "description": "探索、质疑假设、寻求新颖视角的驱动力。好奇心是创造性思维的燃料。",
+                    "facilitatorTechniques": "引导师技巧：",
+                    "techniques": [
+                        "提出'如果...会怎样？'和'我们如何能够...？'的问题",
+                        "鼓励探索切线想法",
+                        "创造神秘和不完整信息场景",
+                        "使用挑衅性提示和约束"
+                    ]
                 },
                 "pillar2": {
-                    "title": "容忍模糊性",
-                    "description": "对不确定性、不完整信息和多种可能解决方案感到舒适。这对创造性探索至关重要。"
+                    "title": "支柱2：容忍模糊性",
+                    "description": "对不确定性、不完整信息和多种可能解决方案感到舒适。这对创造性探索至关重要。",
+                    "facilitatorTechniques": "引导师技巧：",
+                    "techniques": [
+                        "呈现没有明确解决方案的问题",
+                        "鼓励对相同数据的多种解释",
+                        "练习'是的，并且...'而不是'是的，但是...'",
+                        "将不确定性框架为机会而非威胁"
+                    ]
                 },
                 "pillar3": {
-                    "title": "实验心态",
-                    "description": "愿意尝试新方法、从失败中学习、快速迭代。拥抱原型胜过完美。"
+                    "title": "支柱3：实验心态",
+                    "description": "愿意尝试新方法、从失败中学习、快速迭代。拥抱原型胜过完美。",
+                    "facilitatorTechniques": "引导师技巧：",
+                    "techniques": [
+                        "从低保真度原型开始",
+                        "庆祝'美丽的失败'和学习",
+                        "使用快速迭代周期（10分钟原型）",
+                        "作为引导师分享自己的实验失败"
+                    ]
                 },
                 "pillar4": {
-                    "title": "协作精神",
-                    "description": "认识到最好的想法通过多元化视角和集体智慧产生。重视在他人想法基础上建构。"
+                    "title": "支柱4：协作精神",
+                    "description": "认识到最好的想法通过多元化视角和集体智慧产生。重视在他人想法基础上建构。",
+                    "facilitatorTechniques": "引导师技巧：",
+                    "techniques": [
+                        "使用'在此基础上建构'的语言模式",
+                        "创造需要协作的相互依赖任务",
+                        "突出成功的想法建构时刻",
+                        "在团队内轮换领导角色"
+                    ]
+                }
+            },
+            "neuroscienceSnapshots": {
+                "title": "神经科学快照",
+                "introduction": "最新的神经科学研究揭示，创造力涉及三个大脑网络之间的动态切换：",
+                "executiveNetwork": {
+                    "title": "执行网络",
+                    "function": "控制注意力，评估想法，管理工作记忆",
+                    "creativeRole": "筛选和完善想法，保持对目标的关注",
+                    "activation": "结构化分析任务，评估阶段"
+                },
+                "defaultNetwork": {
+                    "title": "默认网络",
+                    "function": "生成自发想法，连接不相关的概念",
+                    "creativeRole": "新颖关联和洞察的来源",
+                    "activation": "放松状态，走神，反思"
+                },
+                "salienceNetwork": {
+                    "title": "显著性网络",
+                    "function": "在网络间切换，识别相关信息",
+                    "creativeRole": "从默认网络活动中识别有前景的想法",
+                    "activation": "过渡时刻，'啊哈！'体验"
+                },
+                "implications": {
+                    "title": "对引导师的启示",
+                    "designForNetworkSwitching": "为网络切换而设计：",
+                    "guidelines": [
+                        "在专注工作和放松反思之间交替",
+                        "在不同类型活动之间包含过渡仪式",
+                        "允许个人反思和团体互动",
+                        "使用运动和环境变化来触发网络切换"
+                    ]
                 }
             },
             "measuringConfidence": {
                 "title": "测量创造性自信",
-                "individualIndicators": "个人指标：想法生成流畅性、创造性任务中的冒险行为、反馈接受度",
-                "teamIndicators": "团队指标：心理安全水平、想法建构频率、集体成果所有权"
-            }
+                "introduction": "创造性自信可以通过定性观察和定量评估来测量。",
+                "individualIndicators": {
+                    "title": "个人指标",
+                    "behavioralMarkers": {
+                        "title": "行为标记：",
+                        "indicators": [
+                            "想法生成流畅性（数量和多样性）",
+                            "创造性任务中的冒险行为",
+                            "反馈接受度和迭代意愿",
+                            "视角转换能力",
+                            "创造性挫折后的恢复时间"
+                        ]
+                    },
+                    "selfReportMeasures": {
+                        "title": "自我报告测量：",
+                        "measures": [
+                            "创造性自信量表（CCS）",
+                            "领域特定创造性自信调查",
+                            "工作坊前后自信评级",
+                            "反思日志分析"
+                        ]
+                    }
+                },
+                "teamIndicators": {
+                    "title": "团队指标",
+                    "groupDynamics": {
+                        "title": "团体动态：",
+                        "indicators": [
+                            "心理安全水平",
+                            "想法建构频率（'是的，并且...'对比'是的，但是...'）",
+                            "团体会议中的发散思维模式",
+                            "冲突解决方法",
+                            "成果的集体所有权"
+                        ]
+                    },
+                    "collaborativeMetrics": {
+                        "title": "协作指标：",
+                        "metrics": [
+                            "团队成员间想法的交叉传播",
+                            "创造性活动中的平等参与率",
+                            "反馈期间的支持性语言模式",
+                            "分享未完成想法的意愿"
+                        ]
+                    }
+                }
+            },
+            "buildingIndividualConfidence": {
+                "title": "建立创造性自信——个人层面",
+                "technique1": {
+                    "title": "技巧1：创造性自信阶梯",
+                    "description": "从低风险的创造性挑战开始，逐步增加复杂性和可见性。",
+                    "implementation": {
+                        "title": "实施：",
+                        "steps": [
+                            "私人探索（5分钟）：个人创意，无分享要求",
+                            "结对分享（10分钟）：与一个信任的伙伴分享想法",
+                            "小组（15分钟）：向3-4人展示完善的想法",
+                            "全组（20分钟）：向整个工作坊展示最终概念"
+                        ]
+                    }
+                },
+                "technique2": {
+                    "title": "技巧2：失败庆祝仪式",
+                    "description": "通过结构化反思将失败重新框架为学习机会。",
+                    "protocol": {
+                        "title": "'美丽失败'协议：",
+                        "steps": [
+                            "分享没有按计划进行的事情",
+                            "从经历中识别一个具体学习",
+                            "描述这个学习如何指导未来尝试",
+                            "从团体获得分享脆弱性的赞赏"
+                        ]
+                    }
+                },
+                "technique3": {
+                    "title": "技巧3：创造性身份发展",
+                    "description": "帮助参与者发展个人创造性身份和叙述。",
+                    "exercise": {
+                        "title": "身份建构练习：",
+                        "activities": [
+                            "完成：'我是一个创造...的人'",
+                            "识别个人创造性优势和偏好",
+                            "分享创造性起源故事和形成性经历",
+                            "设计个人创造性实践承诺"
+                        ]
+                    }
+                }
+            },
+            "buildingTeamConfidence": {
+                "title": "建立创造性自信——团队层面",
+                "technique1": {
+                    "title": "技巧1：心理安全基础",
+                    "description": "建立促进安全创造性冒险的基本规则和仪式。",
+                    "protocols": {
+                        "title": "安全协议：",
+                        "rules": [
+                            "'没有想法太小或太大'",
+                            "'先建构想法再批评'",
+                            "'庆祝实验，不仅仅是成功'",
+                            "'每个人的视角都增加价值'"
+                        ]
+                    }
+                },
+                "technique2": {
+                    "title": "技巧2：集体自信建构",
+                    "description": "使用团体反思来建立共享的创造性身份。",
+                    "ritual": {
+                        "title": "团体自信仪式：",
+                        "steps": [
+                            "每个人分享他们带给团队的一个创造性优势",
+                            "团体识别集体创造性超能力",
+                            "团队创造共享的创造性口号或肯定",
+                            "建立团队创造性目标和承诺"
+                        ]
+                    }
+                },
+                "technique3": {
+                    "title": "技巧3：创造性学徒模式",
+                    "description": "将不同经验水平的参与者配对进行相互学习。",
+                    "structure": {
+                        "title": "学徒结构：",
+                        "elements": [
+                            "有经验的创造者指导新手",
+                            "新手为有经验的创造者带来新鲜视角",
+                            "定期检查和学习反思",
+                            "在更长程序中的角色轮换"
+                        ]
+                    }
+                }
+            },
+            "aiAmplifier": {
+                "title": "AI作为自信放大器",
+                "introduction": "AI可以通过提供无判断的协作、快速迭代能力和多元化视角生成，成为创造性自信的强大放大器。",
+                "techniques": {
+                    "sparringPartner": {
+                        "title": "1. 创造性对话伙伴",
+                        "description": "使用AI进行无判断的头脑风暴，探索疯狂想法，克服初始犹豫。",
+                        "promptFramework": "提示框架：'我正在处理[创造性挑战]。帮助我探索一些非常规方法。不要担心可行性——专注于新颖的视角。我们可以考虑10个疯狂的想法是什么？'"
+                    },
+                    "prototypingAssistant": {
+                        "title": "2. 快速原型制作助手",
+                        "description": "生成快速模型、场景和变化来测试想法，避免完全投入。",
+                        "applications": [
+                            "为测试概念生成用户场景",
+                            "创建视觉模型和线框图",
+                            "编写样本内容和文案",
+                            "开发测试用例和边缘条件"
+                        ]
+                    },
+                    "perspectiveMultiplier": {
+                        "title": "3. 视角倍增器",
+                        "description": "即时访问多元化观点、文化视角和领域专业知识。",
+                        "prompts": [
+                            "'[特定人群]会如何处理这个挑战？'",
+                            "'来自[不同行业]的人会建议什么？'",
+                            "'这个想法在[不同环境]中需要如何改变？'"
+                        ]
+                    },
+                    "progressTracker": {
+                        "title": "4. 进度追踪器",
+                        "description": "监控创造性产出模式并提供个性化的自信建构反馈。",
+                        "dimensions": [
+                            "随时间的想法数量和多样性",
+                            "创造性选择中的冒险进展",
+                            "协作模式和同伴建构",
+                            "迭代频率和学习速度"
+                        ]
+                    }
+                },
+                "ethicalConsiderations": {
+                    "title": "道德考量",
+                    "humanAgency": {
+                        "title": "维护人类能动性：",
+                        "principles": [
+                            "将AI定位为协作者，而非替代品",
+                            "保持人类创造性所有权和决策制定",
+                            "使用AI来放大而非替代人类创造力",
+                            "在创造性过程中对AI辅助保持透明"
+                        ]
+                    },
+                    "biasAwareness": {
+                        "title": "偏见意识：",
+                        "considerations": [
+                            "认识到AI反映训练数据偏见",
+                            "积极寻求超越AI建议的多元化视角",
+                            "将AI作为众多人类视角中的一个输入",
+                            "定期审核AI生成内容的偏见"
+                        ]
+                    }
+                }
+            },
+            "pitfalls": {
+                "title": "陷阱与反模式",
+                "facilitatorMistakes": {
+                    "title": "常见引导师错误",
+                    "mistake1": {
+                        "title": "1. 自信压倒",
+                        "antiPattern": "反模式：过快地推动参与者远离舒适区",
+                        "fix": "修复：使用渐进暴露和挑战级别选择",
+                        "prevention": "预防：定期检查参与者舒适度和能量"
+                    },
+                    "mistake2": {
+                        "title": "2. 比较陷阱",
+                        "antiPattern": "反模式：围绕创造性产出创造竞争动态",
+                        "fix": "修复：专注于个人成长和学习而非相对表现",
+                        "prevention": "预防：使用协作而非竞争框架"
+                    },
+                    "mistake3": {
+                        "title": "3. 完美主义强化",
+                        "antiPattern": "反模式：在创造性过程早期就修饰想法",
+                        "fix": "修复：强调实验和迭代胜过初始质量",
+                        "prevention": "预防：设置明确的'草稿'期望"
+                    },
+                    "mistake4": {
+                        "title": "4. 专业知识威胁",
+                        "antiPattern": "反模式：引导师展示过多创造性专业知识，让参与者感到不足",
+                        "fix": "修复：分享学习困难并建模初学者心态",
+                        "prevention": "预防：将自己定位为学习引导师而非创造性专家"
+                    }
+                },
+                "teamDynamicPitfalls": {
+                    "title": "团队动态陷阱",
+                    "pitfall1": {
+                        "title": "1. 创造性等级形成",
+                        "warningSigns": "警告信号：总是同样的人生成想法，其他人总是批评",
+                        "intervention": "干预：明确轮换角色，使用匿名贡献方法",
+                        "prevention": "预防：从一开始就建立平等贡献规范"
+                    },
+                    "pitfall2": {
+                        "title": "2. 群体思维出现",
+                        "warningSigns": "警告信号：过多同意，缺乏发散思维",
+                        "intervention": "干预：引入魔鬼代言人角色，寻求缺失的视角",
+                        "prevention": "预防：设计建设性冲突和多元化输入"
+                    }
+                }
+            },
+            "keyTakeaways": {
+                "title": "关键要点",
+                "forFacilitators": {
+                    "title": "对引导师：",
+                    "points": [
+                        "创造性自信是可测量的，可以通过特定技术建构",
+                        "平衡个人自信建构与团队动态",
+                        "在维护人类创造性能动性的同时使用AI作为放大器",
+                        "设计激活不同大脑网络的体验",
+                        "创造心理安全作为所有自信建构的基础"
+                    ]
+                },
+                "forParticipants": {
+                    "title": "对参与者：",
+                    "points": [
+                        "创造性自信通过实践和支持性社区成长",
+                        "失败和迭代是创造性发展的重要组成部分",
+                        "每个人都有可以发展的创造性能力",
+                        "AI可以是创造性探索的强大盟友",
+                        "协作增强而非威胁个人创造力"
+                    ]
+                },
+                "applicationChecklist": {
+                    "title": "应用检查清单",
+                    "items": [
+                        "预评估参与者自信水平和期望",
+                        "设计渐进的创造性冒险暴露",
+                        "建立心理安全协议",
+                        "包含个人和协作自信建构",
+                        "深思熟虑且透明地整合AI工具",
+                        "庆祝学习和迭代以及最终成果",
+                        "计划单次会议之外的持续自信建构"
+                    ]
+                }
+            },
+            "fieldNotes": {
+                "title": "现场笔记与延伸阅读",
+                "recommendedResources": {
+                    "title": "推荐资源",
+                    "books": {
+                        "title": "书籍：",
+                        "list": [
+                            "《创造性自信》- 汤姆·凯利和大卫·凯利",
+                            "《心态》- 卡罗尔·德韦克",
+                            "《自信密码》- 凯和希普曼",
+                            "《天生爱创造》- 考夫曼和格雷戈尔"
+                        ]
+                    },
+                    "researchPapers": {
+                        "title": "研究论文：",
+                        "list": [
+                            "Beghetto, R. A. (2006). '中学生的创造性自我效能：相关性'",
+                            "Karwowski, M. (2014). '创造性心态：测量、相关性、后果'",
+                            "Royston, R. & Reiter-Palmon, R. (2019). '创造性自我效能作为创造性心态与创造性问题解决的中介'"
+                        ]
+                    },
+                    "videosAndPodcasts": {
+                        "title": "视频和播客：",
+                        "list": [
+                            "IDEO的'自信课程'视频系列",
+                            "隐藏大脑播客：'创造性大脑'集",
+                            "大卫·凯利TED演讲：'如何建立您的创造性自信'"
+                        ]
+                    }
+                },
+                "facilitatorReflection": {
+                    "title": "引导师反思问题",
+                    "questions": [
+                        "您个人如何建立和维护自己的创造性自信？",
+                        "您对谁'天生有创造力'有什么无意识偏见？",
+                        "您自己的创造性自信（或缺乏）如何影响您的引导？",
+                        "在您的特定环境或文化中可能出现什么安全挑战？",
+                        "您如何在实践中建模创造性脆弱性和学习？"
+                    ]
+                },
+                "advancedApplications": {
+                    "title": "高级应用",
+                    "corporate": {
+                        "title": "企业创新：",
+                        "applications": [
+                            "将创造性自信与业务创新指标联系",
+                            "解决支持创造性冒险的组织障碍",
+                            "发展管理者支持创造性自信的能力",
+                            "创建庆祝和学习创新失败的系统"
+                        ]
+                    },
+                    "educational": {
+                        "title": "教育环境：",
+                        "applications": [
+                            "将创造性自信建构整合到课程设计中",
+                            "培训教师创造性自信引导技术",
+                            "开发适合年龄的评估方法",
+                            "解决可能破坏自信的标准化测试压力"
+                        ]
+                    },
+                    "community": {
+                        "title": "社区发展：",
+                        "applications": [
+                            "为不同文化背景和价值观调整技术",
+                            "解决创造性表达的系统性障碍",
+                            "围绕集体创造性能力建立社区资产",
+                            "将个人自信与社区赋权目标联系"
+                        ]
+                    }
+                }
+            },
+            "nextChapter": "下一章：第4章 - CreateX的使命与原则"
         },
         "designThinkingHistory": {
             "title": "设计思维历史",
@@ -289,27 +736,52 @@
                 "empathize": {
                     "title": "同理心",
                     "description": "理解用户的需求、想法和动机",
-                    "activities": ["用户访谈", "观察研究", "同理心地图", "人物画像"]
+                    "activities": [
+                        "用户访谈",
+                        "观察研究",
+                        "同理心地图",
+                        "人物画像"
+                    ]
                 },
                 "define": {
                     "title": "定义",
                     "description": "基于用户洞察重新构架问题",
-                    "activities": ["问题陈述", "观点表述", "如何能够问题", "机会识别"]
+                    "activities": [
+                        "问题陈述",
+                        "观点表述",
+                        "如何能够问题",
+                        "机会识别"
+                    ]
                 },
                 "ideate": {
                     "title": "创意",
                     "description": "生成解决问题的创新想法",
-                    "activities": ["头脑风暴", "思维导图", "创意评估", "概念选择"]
+                    "activities": [
+                        "头脑风暴",
+                        "思维导图",
+                        "创意评估",
+                        "概念选择"
+                    ]
                 },
                 "prototype": {
                     "title": "原型",
                     "description": "快速构建想法的初步版本",
-                    "activities": ["纸质原型", "数字模型", "角色扮演", "故事板"]
+                    "activities": [
+                        "纸质原型",
+                        "数字模型",
+                        "角色扮演",
+                        "故事板"
+                    ]
                 },
                 "test": {
                     "title": "测试",
                     "description": "与用户测试原型并收集反馈",
-                    "activities": ["用户测试", "反馈收集", "迭代改进", "解决方案验证"]
+                    "activities": [
+                        "用户测试",
+                        "反馈收集",
+                        "迭代改进",
+                        "解决方案验证"
+                    ]
                 }
             }
         },

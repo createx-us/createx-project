@@ -1,0 +1,312 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { ArrowLeft, ArrowRight, Clock, Award, CheckCircle, Play } from 'lucide-react';
+import { remark } from 'remark';
+import remarkHtml from 'remark-html';
+import remarkGfm from 'remark-gfm';
+
+interface Section {
+  id: string;
+  title: string;
+  content: string;
+  type: 'content' | 'interactive';
+}
+
+export default function DesignThinkingHistoryPage({
+  params
+}: {
+  params: { lang: string }
+}) {
+  const [currentSection, setCurrentSection] = useState(0);
+  const [completedSections, setCompletedSections] = useState(new Set());
+  const [processedContent, setProcessedContent] = useState('');
+
+  // Function to process markdown content to HTML
+  const processMarkdown = async (content: string) => {
+    try {
+      const result = await remark()
+        .use(remarkGfm)
+        .use(remarkHtml, { sanitize: false })
+        .process(content);
+      return result.toString();
+    } catch (error) {
+      console.error('Error processing markdown:', error);
+      return content.replace(/\n/g, '<br/>');
+    }
+  };
+
+  // English sections data
+  const englishSections: Section[] = [
+    {
+      id: 'origins',
+      title: 'Origins of Design Thinking',
+      content: '# Origins of Design Thinking\n\nDesign thinking has roots in the design community and Stanford University.',
+      type: 'content'
+    },
+    {
+      id: 'evolution',
+      title: 'Evolution and Growth',
+      content: '# Evolution and Growth\n\nHow design thinking spread from design studios to business and beyond.',
+      type: 'content'
+    },
+    {
+      id: 'modern-applications',
+      title: 'Modern Applications',
+      content: '# Modern Applications\n\nToday design thinking is used across industries for innovation.',
+      type: 'content'
+    }
+  ];
+
+  // Get sections based on language
+  const getSections = (): Section[] => {
+    if (params.lang === 'zh') {
+      return [
+        {
+          id: 'origins',
+          title: '设计思维的起源',
+          content: '# 设计思维的起源\n\n设计思维起源于设计社区和斯坦福大学。从包豪斯学院的基础开始，设计思维强调以人为中心的方法和跨学科协作。\n\n## 关键发展\n- **1919年**: 包豪斯学院成立，建立了"形式服务功能"的原则\n- **1960年代**: 赫伯特·西蒙在《人工智能》中首次系统阐述设计科学\n- **1970年代**: 斯坦福设计项目开始探索设计方法论\n\n这些早期发展为现代设计思维奠定了基础。',
+          type: 'content'
+        },
+        {
+          id: 'evolution',
+          title: '演进与发展',
+          content: '# 演进与发展\n\n设计思维如何从设计工作室传播到商业和其他领域。\n\n## IDEO的贡献\n在1990年代，IDEO公司将设计思维方法论化，创建了以人为中心的设计过程：\n- **启发阶段**: 深入了解用户需求\n- **构思阶段**: 生成创新解决方案\n- **实施阶段**: 将想法转化为现实\n\n## 学术化发展\n斯坦福d.school建立了五阶段模型：\n1. 同理心 - 理解用户\n2. 定义 - 重新框架问题\n3. 创想 - 生成想法\n4. 原型 - 构建解决方案\n5. 测试 - 学习和迭代',
+          type: 'content'
+        },
+        {
+          id: 'modern-applications',
+          title: '现代应用',
+          content: '# 现代应用\n\n今天，设计思维在各个行业中用于创新。\n\n## 商业创新\n- **产品开发**: 以用户为中心的产品设计\n- **服务设计**: 改善客户体验\n- **组织变革**: 重新设计工作流程和文化\n\n## 社会创新\n- **公共服务**: 政府服务的重新设计\n- **社区发展**: 参与式设计方法\n- **可持续发展**: 环境和社会挑战的解决方案\n\n## AI时代的设计思维\nCreateX方法论代表了最新演进，结合：\n- 传统的以人为中心的方法\n- AI增强的洞察和原型制作\n- 分布式协作和远程创新\n- 实时数据分析和反馈循环',
+          type: 'content'
+        }
+      ];
+    }
+    return englishSections;
+  };
+
+  const sections = getSections();
+
+  // Process content when section changes
+  useEffect(() => {
+    if (sections[currentSection]) {
+      processMarkdown(sections[currentSection].content)
+        .then(setProcessedContent);
+    }
+  }, [currentSection]);
+
+  // Calculate progress
+  const progress = (completedSections.size / sections.length) * 100;
+
+  // Toggle section completion
+  const toggleSectionComplete = (sectionIndex: number) => {
+    const newCompleted = new Set(completedSections);
+    if (newCompleted.has(sectionIndex)) {
+      newCompleted.delete(sectionIndex);
+    } else {
+      newCompleted.add(sectionIndex);
+    }
+    setCompletedSections(newCompleted);
+  };
+
+  // UI text based on language
+  const uiText = params.lang === 'zh' ? {
+    backToModules: '返回模块',
+    chapter: '章节',
+    moduleTitle: '设计思维历史',
+    completed: '已完成',
+    minutes: '分钟',
+    intermediate: '初级',
+    moduleSections: '模块章节',
+    interactiveSection: '互动环节',
+    interactiveSectionDescription: '这是一个互动练习环节，请积极参与。',
+    markComplete: '标记完成',
+    previous: '上一个',
+    next: '下一个'
+  } : {
+    backToModules: 'Back to Modules',
+    chapter: 'Chapter',
+    moduleTitle: 'Design Thinking History',
+    completed: 'Completed',
+    minutes: 'minutes',
+    intermediate: 'Beginner',
+    moduleSections: 'Module Sections',
+    interactiveSection: 'Interactive Section',
+    interactiveSectionDescription: 'This is an interactive exercise section. Please engage actively.',
+    markComplete: 'Mark Complete',
+    previous: 'Previous',
+    next: 'Next'
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      {/* Header */}
+      <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <Link
+                href={`/${params.lang}/modules`}
+                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
+                <ArrowLeft className="h-5 w-5 mr-2" />
+                {uiText.backToModules}
+              </Link>
+              <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+              <div>
+                <div className="flex items-center space-x-2 mb-1">
+                  <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                    {uiText.chapter} 2
+                  </span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">Foundations</span>
+                </div>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  {uiText.moduleTitle}
+                </h1>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {Math.round(progress)}% {uiText.completed}
+              </div>
+              <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                <div
+                  className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center space-x-1">
+              <Clock className="h-4 w-4" />
+              <span>30 minutes</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <Award className="h-4 w-4" />
+              <span>{uiText.intermediate}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Sidebar Navigation */}
+          <div className="lg:col-span-1">
+            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                {uiText.moduleSections}
+              </h3>
+              <nav className="space-y-2">
+                {sections.map((section: Section, index: number) => (
+                  <button
+                    key={section.id}
+                    onClick={() => setCurrentSection(index)}
+                    className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
+                      ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
+                      : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                      }`}
+                  >
+                    <span className="text-sm font-medium">{section.title}</span>
+                    {completedSections.has(index) && (
+                      <CheckCircle className="h-4 w-4 text-green-500" />
+                    )}
+                  </button>
+                ))}
+              </nav>
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="lg:col-span-3">
+            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  {sections[currentSection].title}
+                </h2>
+                <button
+                  onClick={() => toggleSectionComplete(currentSection)}
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${completedSections.has(currentSection)
+                    ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                >
+                  {completedSections.has(currentSection) ? (
+                    <>
+                      <CheckCircle className="h-4 w-4" />
+                      <span>{uiText.completed}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Play className="h-4 w-4" />
+                      <span>{uiText.markComplete}</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {/* Content */}
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                <div dangerouslySetInnerHTML={{
+                  __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
+                }} />
+              </div>
+
+              {/* Section Type Indicator */}
+              {sections[currentSection].type === 'interactive' && (
+                <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                  <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
+                    <Play className="h-5 w-5" />
+                    <span className="font-medium">{uiText.interactiveSection}</span>
+                  </div>
+                  <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
+                    {uiText.interactiveSectionDescription}
+                  </p>
+                </div>
+              )}
+
+              {/* Navigation */}
+              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                <button
+                  onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
+                  disabled={currentSection === 0}
+                  className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  <ArrowLeft className="h-4 w-4" />
+                  <span>{uiText.previous}</span>
+                </button>
+
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  {currentSection + 1} of {sections.length}
+                </span>
+
+                {currentSection < sections.length - 1 ? (
+                  <button
+                    onClick={() => setCurrentSection(currentSection + 1)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+                  >
+                    <span>{uiText.next}</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                ) : (
+                  <Link
+                    href={`/${params.lang}/modules/creative-confidence`}
+                    className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+                  >
+                    <span>{uiText.next} Module</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -42,7 +42,7 @@ export function ThemeProvider({
 
     useEffect(() => {
         if (!mounted) return;
-        
+
         const root = window.document.documentElement;
 
         root.classList.remove('light', 'dark');
@@ -57,7 +57,7 @@ export function ThemeProvider({
         } else {
             root.classList.add(theme);
         }
-        
+
         // Save to localStorage
         localStorage.setItem(storageKey, theme);
     }, [theme, mounted, storageKey]);

@@ -2,10 +2,19 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Github, MessageCircle, Mail, Users, Heart } from 'lucide-react';
+import { locales, defaultLocale, type Locale } from '@/lib/i18n';
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
+    const pathname = usePathname();
+
+    // Get current locale from pathname
+    const pathParts = pathname?.split('/') || [];
+    const pathLocale = pathParts.length > 1 ? pathParts[1] : '';
+    const currentLocale = locales.includes(pathLocale as Locale) ? pathLocale as Locale : defaultLocale;
 
     return (
         <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
@@ -53,12 +62,12 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="/modules"
+                                <Link
+                                    href={`/${currentLocale}/modules`}
                                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                                 >
                                     Facilitator Modules
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -150,13 +159,13 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="/community"
+                                <Link
+                                    href={`/${currentLocale}/community`}
                                     className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                                 >
                                     <Users className="h-4 w-4" />
                                     <span>Community Hub</span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -170,24 +179,24 @@ export function Footer() {
                                 © {currentYear} CreateX Foundation. All rights reserved.
                             </p>
                             <div className="flex items-center space-x-4">
-                                <a
-                                    href="/privacy"
+                                <Link
+                                    href={`/${currentLocale}/privacy`}
                                     className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                                 >
                                     Privacy Policy
-                                </a>
-                                <a
-                                    href="/terms"
+                                </Link>
+                                <Link
+                                    href={`/${currentLocale}/terms`}
                                     className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                                 >
                                     Terms of Service
-                                </a>
-                                <a
-                                    href="/license"
+                                </Link>
+                                <Link
+                                    href={`/${currentLocale}/license`}
                                     className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                                 >
                                     CC BY-SA 4.0
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
