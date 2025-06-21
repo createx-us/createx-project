@@ -733,7 +733,7 @@ IBM通过设计思维的转型：
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <ProgressIndicator progress={Math.round((moduleProgress.moduleProgress.sectionsCompleted.size / sections.length) * 100)} className="mb-4" />
-      
+
       {/* Header */}
       <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

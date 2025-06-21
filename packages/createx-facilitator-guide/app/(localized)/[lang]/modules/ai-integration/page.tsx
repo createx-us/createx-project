@@ -175,7 +175,7 @@ function AiIntegrationComponent({
       "type": "content",
       "content": "- **书籍：** \"Prompt Engineering for Everyone\" (Chen, 2024)\n- **论文：** Google DeepMind (2024) \"生成式AI共创的伦理框架\"\n- **工具包：** createx.us/toolkit/ai-playbook（检查清单、提示库、故障排除卡片）\n- **播客：** AI in Facilitation — Ep. 12 \"从炒作到习惯\"\n\n## 引导师检查清单\n\n☐ 工具选择矩阵已审查  \n☐ 使用C-T-E-C-O起草提示  \n☐ 同意和伦理表格已签署  \n☐ 审计日志记录  \n☐ 备用离线流程已准备\n\n## 反思问题\n\n1. 您如何平衡AI效率收益与维护以人为中心的设计原则？\n2. 对于您的工作坊环境，哪些特定的伦理保障最重要？\n3. 您如何发展提示制作技能以最大化AI工具效果？\n\n## 延伸资源\n\n- **选择工具：** 工具选择矩阵、3-L决策过滤器、特定阶段集成配方\n- **伦理和安全：** 数据和伦理检查清单、偏见扫描协议、同意框架\n- **技能发展：** C-T-E-C-O框架、微课程、故障排除指南"
     }
-];
+  ];
 
   // Get sections based on language
   const getSections = (): Section[] => {
@@ -234,180 +234,180 @@ function AiIntegrationComponent({
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <ProgressIndicator progress={Math.round((moduleProgress.moduleProgress.sectionsCompleted.size / sections.length) * 100)} className="mb-4" />
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <Link
-                href={`/${params.lang}/modules`}
-                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              >
-                <ArrowLeft className="h-5 w-5 mr-2" />
-                {uiText.backToModules}
-              </Link>
-              <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-              <div>
-                <div className="flex items-center space-x-2 mb-1">
-                  <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                    {uiText.chapter} 18
-                  </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">AI & Technology</span>
+        {/* Header */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <Link
+                  href={`/${params.lang}/modules`}
+                  className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  <ArrowLeft className="h-5 w-5 mr-2" />
+                  {uiText.backToModules}
+                </Link>
+                <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+                <div>
+                  <div className="flex items-center space-x-2 mb-1">
+                    <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                      {uiText.chapter} 18
+                    </span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">AI & Technology</span>
+                  </div>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {uiText.moduleTitle}
+                  </h1>
                 </div>
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {uiText.moduleTitle}
-                </h1>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  {Math.round(progress)}% {uiText.completed}
+                </div>
+                <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                  <div
+                    className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
+                    style={{ width: `${progress}%` }}
+                  ></div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                {Math.round(progress)}% {uiText.completed}
+            <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex items-center space-x-1">
+                <Clock className="h-4 w-4" />
+                <span>55 {params.lang === 'zh' ? '分钟' : 'minutes'}</span>
               </div>
-              <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
-                <div
-                  className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
-                  style={{ width: `${progress}%` }}
-                ></div>
+              <div className="flex items-center space-x-1">
+                <Award className="h-4 w-4" />
+                <span>{uiText.intermediate}</span>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
-            <div className="flex items-center space-x-1">
-              <Clock className="h-4 w-4" />
-              <span>55 {params.lang === 'zh' ? '分钟' : 'minutes'}</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Award className="h-4 w-4" />
-              <span>{uiText.intermediate}</span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar Navigation */}
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                {uiText.moduleSections}
-              </h3>
-              <nav className="space-y-2">
-                {sections.map((section: Section, index: number) => (
-                  <button
-                    key={section.id}
-                    onClick={() => setCurrentSection(index)}
-                    className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Sidebar Navigation */}
+            <div className="lg:col-span-1">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  {uiText.moduleSections}
+                </h3>
+                <nav className="space-y-2">
+                  {sections.map((section: Section, index: number) => (
+                    <button
+                      key={section.id}
+                      onClick={() => setCurrentSection(index)}
+                      className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
                         ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
                         : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                      }`}
-                  >
-                    <span className="text-sm font-medium">{section.title}</span>
-                    {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
-                      <CheckCircle className="h-4 w-4 text-green-500" />
-                    )}
-                  </button>
-                ))}
-              </nav>
+                        }`}
+                    >
+                      <span className="text-sm font-medium">{section.title}</span>
+                      {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                      )}
+                    </button>
+                  ))}
+                </nav>
+              </div>
             </div>
-          </div>
 
-          {/* Main Content */}
-          <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {sections[currentSection].title}
-                </h2>
-                <button
-                  onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
+            {/* Main Content */}
+            <div className="lg:col-span-3">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {sections[currentSection].title}
+                  </h2>
+                  <button
+                    onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
                       ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
                       : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
-                >
-                  {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
-                    <>
-                      <CheckCircle className="h-4 w-4" />
-                      <span>{uiText.completed}</span>
-                    </>
-                  ) : (
-                    <>
-                      <Play className="h-4 w-4" />
-                      <span>{uiText.markComplete}</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
-              {/* Content */}
-              <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{
-                  __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
-                }} />
-              </div>
-
-              {/* Section Type Indicator */}
-              {sections[currentSection].type === 'interactive' && (
-                <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                  <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
-                    <Play className="h-5 w-5" />
-                    <span className="font-medium">{uiText.interactiveSection}</span>
-                  </div>
-                  <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
-                    {uiText.interactiveSectionDescription}
-                  </p>
-                </div>
-              )}
-
-              {/* Navigation */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
-                  disabled={currentSection === 0}
-                  className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  <span>{uiText.previous}</span>
-                </button>
-
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  {currentSection + 1} of {sections.length}
-                </span>
-
-                {currentSection < sections.length - 1 ? (
-                  <button
-                    onClick={() => setCurrentSection(currentSection + 1)}
-                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+                      }`}
                   >
-                    <span>{uiText.next}</span>
-                    <ArrowRight className="h-4 w-4" />
+                    {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
+                      <>
+                        <CheckCircle className="h-4 w-4" />
+                        <span>{uiText.completed}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="h-4 w-4" />
+                        <span>{uiText.markComplete}</span>
+                      </>
+                    )}
                   </button>
-                ) : (
-                  <Link
-                    href={`/${params.lang}/modules/troubleshooting`}
-                    className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
-                  >
-                    <span>{uiText.next} Module</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
+                </div>
+
+                {/* Content */}
+                <div className="prose prose-lg dark:prose-invert max-w-none">
+                  <div dangerouslySetInnerHTML={{
+                    __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
+                  }} />
+                </div>
+
+                {/* Section Type Indicator */}
+                {sections[currentSection].type === 'interactive' && (
+                  <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                    <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
+                      <Play className="h-5 w-5" />
+                      <span className="font-medium">{uiText.interactiveSection}</span>
+                    </div>
+                    <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
+                      {uiText.interactiveSectionDescription}
+                    </p>
+                  </div>
                 )}
+
+                {/* Navigation */}
+                <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <button
+                    onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
+                    disabled={currentSection === 0}
+                    className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ArrowLeft className="h-4 w-4" />
+                    <span>{uiText.previous}</span>
+                  </button>
+
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {currentSection + 1} of {sections.length}
+                  </span>
+
+                  {currentSection < sections.length - 1 ? (
+                    <button
+                      onClick={() => setCurrentSection(currentSection + 1)}
+                      className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next}</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/${params.lang}/modules/troubleshooting`}
+                      className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next} Module</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>    );
+    </div>);
 }
 
 const AiIntegrationPage = withModuleProgress(
   AiIntegrationComponent,
   'ai-integration',
-  9
+  11
 );
 
 export default AiIntegrationPage;

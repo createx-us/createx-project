@@ -40,72 +40,72 @@ function ReflectionLearningComponent({
   // English sections data
   const englishSections: Section[] = [
     {
-        "id": "section-14-0",
-        "title": "14.0 Opening Story",
-        "type": "content",
-        "content": "\"Our biggest insight came after the applause.\"\n\nAt a Nairobi CreateX showcase, Team AgroLink wowed judges with an AI produce-pricing prototype. But during the debrief circle, a quiet farmer noted, \"Prices shift hourly; weekly SMS isn't enough.\" The team pivoted to real-time USSD alerts and later doubled pilot adoption. The moment illustrates a core CreateX belief: learning peaks after the 'finish line'—if we make space for it."
+      "id": "section-14-0",
+      "title": "14.0 Opening Story",
+      "type": "content",
+      "content": "\"Our biggest insight came after the applause.\"\n\nAt a Nairobi CreateX showcase, Team AgroLink wowed judges with an AI produce-pricing prototype. But during the debrief circle, a quiet farmer noted, \"Prices shift hourly; weekly SMS isn't enough.\" The team pivoted to real-time USSD alerts and later doubled pilot adoption. The moment illustrates a core CreateX belief: learning peaks after the 'finish line'—if we make space for it."
     },
     {
-        "id": "section-14-1",
-        "title": "14.1 Why Reflection?",
-        "type": "interactive",
-        "content": "**Core Principles:**\n- **Double-Loop Learning (Argyris):** Revisit governing assumptions, not just actions\n- **Knowledge Transfer (NASA post-mortems):** Reduces repeat errors across teams  \n- **Creative Confidence Flywheel (Kelley):** Reflection consolidates mastery experiences, fueling confidence"
+      "id": "section-14-1",
+      "title": "14.1 Why Reflection?",
+      "type": "interactive",
+      "content": "**Core Principles:**\n- **Double-Loop Learning (Argyris):** Revisit governing assumptions, not just actions\n- **Knowledge Transfer (NASA post-mortems):** Reduces repeat errors across teams  \n- **Creative Confidence Flywheel (Kelley):** Reflection consolidates mastery experiences, fueling confidence"
     },
     {
-        "id": "section-14-2",
-        "title": "14.2 After-Action Review (AAR)",
-        "type": "content",
-        "content": "| Section | Details |\n|---------|---------|\n| **Purpose** | Structured discussion that compares intended vs. actual outcomes and extracts lessons |\n| **When to Use** | End of each sprint, workshop, or pilot |\n| **Four Core Questions** | 1) What was supposed to happen? 2) What actually happened? 3) Why were there differences? 4) What will we sustain or change? |\n| **Step-by-Step** | Silent self-note (3 min) → Round-robin sharing → Cluster insights → Commit actions |\n| **Remote Tips** | BoardX AAR template auto-populates questions; 5-min timer per section |\n| **AI Prompt Ideas** | \"Summarize AAR sticky notes into themes ranked by frequency.\" |\n| **Pitfalls** | Blame game; enforce blameless language: \"What in the process led to...?\" |\n| **Template** | createx.us/toolkit/aar-canvas |"
+      "id": "section-14-2",
+      "title": "14.2 After-Action Review (AAR)",
+      "type": "content",
+      "content": "| Section | Details |\n|---------|---------|\n| **Purpose** | Structured discussion that compares intended vs. actual outcomes and extracts lessons |\n| **When to Use** | End of each sprint, workshop, or pilot |\n| **Four Core Questions** | 1) What was supposed to happen? 2) What actually happened? 3) Why were there differences? 4) What will we sustain or change? |\n| **Step-by-Step** | Silent self-note (3 min) → Round-robin sharing → Cluster insights → Commit actions |\n| **Remote Tips** | BoardX AAR template auto-populates questions; 5-min timer per section |\n| **AI Prompt Ideas** | \"Summarize AAR sticky notes into themes ranked by frequency.\" |\n| **Pitfalls** | Blame game; enforce blameless language: \"What in the process led to...?\" |\n| **Template** | createx.us/toolkit/aar-canvas |"
     },
     {
-        "id": "section-14-3",
-        "title": "14.3 Learning Journals",
-        "type": "content",
-        "content": "| Prompt Type | Example |\n|-------------|---------|\n| **Moment of Surprise** | \"I assumed farmers had smartphones—many only have feature phones.\" |\n| **Quick Win** | \"Storyboarding cut UI debate from 45 to 15 min.\" |\n| **Emerging Question** | \"How might we automate USSD prompts cheaply?\" |\n\n**Method Details:**\n- **Purpose:** Individual reflection to capture tacit insights\n- **Cadence:** 5 minutes at day's end; weekly synthesis\n- **AI Assist:** GPT sentiment & topic tagger → auto-merge team journal themes\n- **Pitfalls:** Turns into status log; anchor prompts to learning, not tasks\n- **Template:** createx.us/toolkit/learning-journal"
+      "id": "section-14-3",
+      "title": "14.3 Learning Journals",
+      "type": "content",
+      "content": "| Prompt Type | Example |\n|-------------|---------|\n| **Moment of Surprise** | \"I assumed farmers had smartphones—many only have feature phones.\" |\n| **Quick Win** | \"Storyboarding cut UI debate from 45 to 15 min.\" |\n| **Emerging Question** | \"How might we automate USSD prompts cheaply?\" |\n\n**Method Details:**\n- **Purpose:** Individual reflection to capture tacit insights\n- **Cadence:** 5 minutes at day's end; weekly synthesis\n- **AI Assist:** GPT sentiment & topic tagger → auto-merge team journal themes\n- **Pitfalls:** Turns into status log; anchor prompts to learning, not tasks\n- **Template:** createx.us/toolkit/learning-journal"
     },
     {
-        "id": "section-14-4",
-        "title": "14.4 Sprint Retrospective (Agile \"Keep / Drop / Try / Amplify\")",
-        "type": "content",
-        "content": "| Quadrant | Use |\n|----------|-----|\n| **Keep** | Practices that worked well |\n| **Drop** | Wasteful habits |\n| **Try** | New experiments next sprint |\n| **Amplify** | Things to double-down on |\n\n**Remote Tip:** BoardX retro board auto-colors cards by quadrant and tallies votes."
+      "id": "section-14-4",
+      "title": "14.4 Sprint Retrospective (Agile \"Keep / Drop / Try / Amplify\")",
+      "type": "content",
+      "content": "| Quadrant | Use |\n|----------|-----|\n| **Keep** | Practices that worked well |\n| **Drop** | Wasteful habits |\n| **Try** | New experiments next sprint |\n| **Amplify** | Things to double-down on |\n\n**Remote Tip:** BoardX retro board auto-colors cards by quadrant and tallies votes."
     },
     {
-        "id": "section-14-5",
-        "title": "14.5 AI Insight Summarizer Workflow",
-        "type": "content",
-        "content": "1. **Export** all sticky notes, chat logs, transcripts\n2. **GPT-4o** → topic model (+ semantic clusters)\n3. **Rank** themes by frequency & novelty\n4. **Generate** slide deck draft (title, key insight, verbatim quote, action)\n\n**Ethics Note:** Strip PII; double-check quotes for context integrity."
+      "id": "section-14-5",
+      "title": "14.5 AI Insight Summarizer Workflow",
+      "type": "content",
+      "content": "1. **Export** all sticky notes, chat logs, transcripts\n2. **GPT-4o** → topic model (+ semantic clusters)\n3. **Rank** themes by frequency & novelty\n4. **Generate** slide deck draft (title, key insight, verbatim quote, action)\n\n**Ethics Note:** Strip PII; double-check quotes for context integrity."
     },
     {
-        "id": "section-14-6",
-        "title": "14.6 Metrics & Outcome Review",
-        "type": "content",
-        "content": "| Metric | Board Block | Source | Review Cadence |\n|--------|-------------|--------|----------------|\n| **AoCC Added** | BoardX log | End of each workshop |\n| **Prototype-to-Pilot Rate** | Implementation tracker | Monthly |\n| **User KPI Delta** | Pilot dashboard | Sprint demo |\n| **Creative Confidence Delta (CCD)** | CCS-10 survey | Pre/post workshop |\n\n**Display boards in a public channel—transparency builds trust.**"
+      "id": "section-14-6",
+      "title": "14.6 Metrics & Outcome Review",
+      "type": "content",
+      "content": "| Metric | Board Block | Source | Review Cadence |\n|--------|-------------|--------|----------------|\n| **AoCC Added** | BoardX log | End of each workshop |\n| **Prototype-to-Pilot Rate** | Implementation tracker | Monthly |\n| **User KPI Delta** | Pilot dashboard | Sprint demo |\n| **Creative Confidence Delta (CCD)** | CCS-10 survey | Pre/post workshop |\n\n**Display boards in a public channel—transparency builds trust.**"
     },
     {
-        "id": "section-14-7",
-        "title": "14.7 Community Knowledge Sharing",
-        "type": "content",
-        "content": "| Channel | Content | Cadence |\n|---------|---------|---------|\n| **#fac-lab Discord** | 3-slide AAR snapshots | Within 48 h |\n| **CreateX Wiki** | Method tweaks & new templates | Weekly |\n| **Annual Summit** | Lightning \"fail tales\" talks | Yearly |\n\n**AI Prompt:** \"Convert this workshop AAR into a 300-word blog post for the CreateX community site.\""
+      "id": "section-14-7",
+      "title": "14.7 Community Knowledge Sharing",
+      "type": "content",
+      "content": "| Channel | Content | Cadence |\n|---------|---------|---------|\n| **#fac-lab Discord** | 3-slide AAR snapshots | Within 48 h |\n| **CreateX Wiki** | Method tweaks & new templates | Weekly |\n| **Annual Summit** | Lightning \"fail tales\" talks | Yearly |\n\n**AI Prompt:** \"Convert this workshop AAR into a 300-word blog post for the CreateX community site.\""
     },
     {
-        "id": "section-14-8",
-        "title": "14.8 Archiving & Retrieval Standards",
-        "type": "content",
-        "content": "1. **File Naming** — YYYY-MM-DD_Project_Method_Version.ext\n2. **Metadata Tags** — method, sector, language, AI tools used\n3. **Repository** — All artefacts pushed to Git-backed CreateX Library (CC-BY-SA)\n4. **Access Levels** — Public by default; redact client secrets"
+      "id": "section-14-8",
+      "title": "14.8 Archiving & Retrieval Standards",
+      "type": "content",
+      "content": "1. **File Naming** — YYYY-MM-DD_Project_Method_Version.ext\n2. **Metadata Tags** — method, sector, language, AI tools used\n3. **Repository** — All artefacts pushed to Git-backed CreateX Library (CC-BY-SA)\n4. **Access Levels** — Public by default; redact client secrets"
     },
     {
-        "id": "section-14-9",
-        "title": "14.9 Common Pitfalls & Fixes",
-        "type": "content",
-        "content": "| Pitfall | Symptom | Remedy |\n|---------|---------|---------|\n| **Token Retro** | Team skims AAR in 10 min | Schedule 30 min min; facilitator models vulnerability |\n| **Blame Storm** | Defensive language | Use \"I\" statements, process focus rules |\n| **Insight Black-Hole** | Notes never resurface | Assign Insight Librarian to publish digest within 24 h |\n| **AI Summary Over-reach** | Nuance lost in abstraction | Human reviewer edits before circulation |\n\n## Key Takeaways\n\n- **Reflection converts activity into learning** → into future leverage\n- **Blend collective** (AAR, retros) **and individual** (journals) practices\n- **AI cuts synthesis time** but human sense-checking preserves meaning\n- **Publish insights fast**; shared knowledge compounds across the CreateX network"
+      "id": "section-14-9",
+      "title": "14.9 Common Pitfalls & Fixes",
+      "type": "content",
+      "content": "| Pitfall | Symptom | Remedy |\n|---------|---------|---------|\n| **Token Retro** | Team skims AAR in 10 min | Schedule 30 min min; facilitator models vulnerability |\n| **Blame Storm** | Defensive language | Use \"I\" statements, process focus rules |\n| **Insight Black-Hole** | Notes never resurface | Assign Insight Librarian to publish digest within 24 h |\n| **AI Summary Over-reach** | Nuance lost in abstraction | Human reviewer edits before circulation |\n\n## Key Takeaways\n\n- **Reflection converts activity into learning** → into future leverage\n- **Blend collective** (AAR, retros) **and individual** (journals) practices\n- **AI cuts synthesis time** but human sense-checking preserves meaning\n- **Publish insights fast**; shared knowledge compounds across the CreateX network"
     },
     {
-        "id": "section-14-11",
-        "title": "14.11 Field Notes & Further Reading",
-        "type": "content",
-        "content": "- **Book:** \"The Fifth Discipline\" (Senge) — learning organizations\n- **Paper:** Argyris (1991) \"Teaching Smart People How to Learn\"\n- **Toolkit:** createx.us/toolkit/reflection-pack (AAR canvas, journal prompts, retro board)\n- **Podcast:** Retrospective Radar — Ep. 42 \"Beyond Post-mortems: Continuous Learning\"\n\n## Facilitator Checklist\n\n☐ AAR scheduled & template ready  \n☐ Learning journal prompts sent  \n☐ Retro board set up  \n☐ AI summarizer credentials ok  \n☐ Insight digest published within 24 h\n\n## Reflection Questions\n\n1. How will you integrate both individual and collective reflection practices in your facilitation?\n2. What systems will you create to ensure insights are captured and shared rather than lost?\n3. How can you use AI tools to enhance reflection while preserving the human nuance in insights?\n\n## Further Resources\n\n- **Templates:** AAR Canvas, Learning Journal prompts, Sprint Retrospective board\n- **AI Tools:** GPT-4o topic modeling, sentiment analysis, insight summarization\n- **Community:** #fac-lab Discord, CreateX Wiki, Annual Summit presentations"
+      "id": "section-14-11",
+      "title": "14.11 Field Notes & Further Reading",
+      "type": "content",
+      "content": "- **Book:** \"The Fifth Discipline\" (Senge) — learning organizations\n- **Paper:** Argyris (1991) \"Teaching Smart People How to Learn\"\n- **Toolkit:** createx.us/toolkit/reflection-pack (AAR canvas, journal prompts, retro board)\n- **Podcast:** Retrospective Radar — Ep. 42 \"Beyond Post-mortems: Continuous Learning\"\n\n## Facilitator Checklist\n\n☐ AAR scheduled & template ready  \n☐ Learning journal prompts sent  \n☐ Retro board set up  \n☐ AI summarizer credentials ok  \n☐ Insight digest published within 24 h\n\n## Reflection Questions\n\n1. How will you integrate both individual and collective reflection practices in your facilitation?\n2. What systems will you create to ensure insights are captured and shared rather than lost?\n3. How can you use AI tools to enhance reflection while preserving the human nuance in insights?\n\n## Further Resources\n\n- **Templates:** AAR Canvas, Learning Journal prompts, Sprint Retrospective board\n- **AI Tools:** GPT-4o topic modeling, sentiment analysis, insight summarization\n- **Community:** #fac-lab Discord, CreateX Wiki, Annual Summit presentations"
     }
-];
+  ];
 
   // Get sections based on language
   const getSections = (): Section[] => {
@@ -219,7 +219,7 @@ function ReflectionLearningComponent({
     completed: 'Completed',
     minutes: 'minutes',
     intermediate: 'Intermediate',
-    moduleSections: 'Module Sections', 
+    moduleSections: 'Module Sections',
     interactiveSection: 'Interactive Section',
     interactiveSectionDescription: 'This is an interactive exercise section. Please engage actively.',
     markComplete: 'Mark Complete',
@@ -231,182 +231,180 @@ function ReflectionLearningComponent({
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <ProgressIndicator progress={Math.round((moduleProgress.moduleProgress.sectionsCompleted.size / sections.length) * 100)} className="mb-4" />
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <Link
-                href={`/${params.lang}/modules`}
-                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              >
-                <ArrowLeft className="h-5 w-5 mr-2" />
-                {uiText.backToModules}
-              </Link>
-              <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-              <div>
-                <div className="flex items-center space-x-2 mb-1">
-                  <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                    {uiText.chapter} 14
-                  </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">Workshop Design</span>
+        {/* Header */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <Link
+                  href={`/${params.lang}/modules`}
+                  className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  <ArrowLeft className="h-5 w-5 mr-2" />
+                  {uiText.backToModules}
+                </Link>
+                <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+                <div>
+                  <div className="flex items-center space-x-2 mb-1">
+                    <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                      {uiText.chapter} 14
+                    </span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">Workshop Design</span>
+                  </div>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {uiText.moduleTitle}
+                  </h1>
                 </div>
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {uiText.moduleTitle}
-                </h1>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  {Math.round(progress)}% {uiText.completed}
+                </div>
+                <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                  <div
+                    className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
+                    style={{ width: `${progress}%` }}
+                  ></div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                {Math.round(progress)}% {uiText.completed}
+            <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex items-center space-x-1">
+                <Clock className="h-4 w-4" />
+                <span>35 minutes</span>
               </div>
-              <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
-                <div
-                  className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
-                  style={{ width: `${progress}%` }}
-                ></div>
+              <div className="flex items-center space-x-1">
+                <Award className="h-4 w-4" />
+                <span>{uiText.intermediate}</span>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
-            <div className="flex items-center space-x-1">
-              <Clock className="h-4 w-4" />
-              <span>35 minutes</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Award className="h-4 w-4" />
-              <span>{uiText.intermediate}</span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar Navigation */}
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                {uiText.moduleSections}
-              </h3>
-              <nav className="space-y-2">
-                {sections.map((section: Section, index: number) => (
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Sidebar Navigation */}
+            <div className="lg:col-span-1">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  {uiText.moduleSections}
+                </h3>
+                <nav className="space-y-2">
+                  {sections.map((section: Section, index: number) => (
+                    <button
+                      key={section.id}
+                      onClick={() => setCurrentSection(index)}
+                      className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
+                          ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
+                          : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                        }`}
+                    >
+                      <span className="text-sm font-medium">{section.title}</span>
+                      {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                      )}
+                    </button>
+                  ))}
+                </nav>
+              </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="lg:col-span-3">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {sections[currentSection].title}
+                  </h2>
                   <button
-                    key={section.id}
-                    onClick={() => setCurrentSection(index)}
-                    className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${
-                      currentSection === index
-                        ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
-                        : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                    }`}
+                    onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
+                        ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      }`}
                   >
-                    <span className="text-sm font-medium">{section.title}</span>
-                    {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                    {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
+                      <>
+                        <CheckCircle className="h-4 w-4" />
+                        <span>{uiText.completed}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="h-4 w-4" />
+                        <span>{uiText.markComplete}</span>
+                      </>
                     )}
                   </button>
-                ))}
-              </nav>
-            </div>
-          </div>
-
-          {/* Main Content */}
-          <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {sections[currentSection].title}
-                </h2>
-                <button
-                  onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${
-                    moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
-                      ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
-                    <>
-                      <CheckCircle className="h-4 w-4" />
-                      <span>{uiText.completed}</span>
-                    </>
-                  ) : (
-                    <>
-                      <Play className="h-4 w-4" />
-                      <span>{uiText.markComplete}</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
-              {/* Content */}
-              <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{
-                  __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
-                }} />
-              </div>
-
-              {/* Section Type Indicator */}
-              {sections[currentSection].type === 'interactive' && (
-                <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                  <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
-                    <Play className="h-5 w-5" />
-                    <span className="font-medium">{uiText.interactiveSection}</span>
-                  </div>
-                  <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
-                    {uiText.interactiveSectionDescription}
-                  </p>
                 </div>
-              )}
 
-              {/* Navigation */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
-                  disabled={currentSection === 0}
-                  className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  <span>{uiText.previous}</span>
-                </button>
+                {/* Content */}
+                <div className="prose prose-lg dark:prose-invert max-w-none">
+                  <div dangerouslySetInnerHTML={{
+                    __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
+                  }} />
+                </div>
 
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  {currentSection + 1} of {sections.length}
-                </span>
-
-                {currentSection < sections.length - 1 ? (
-                  <button
-                    onClick={() => setCurrentSection(currentSection + 1)}
-                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
-                  >
-                    <span>{uiText.next}</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                ) : (
-                  <Link
-                    href={`/${params.lang}/modules/scoping-logistics`}
-                    className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
-                  >
-                    <span>{uiText.next} Module</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
+                {/* Section Type Indicator */}
+                {sections[currentSection].type === 'interactive' && (
+                  <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                    <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
+                      <Play className="h-5 w-5" />
+                      <span className="font-medium">{uiText.interactiveSection}</span>
+                    </div>
+                    <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
+                      {uiText.interactiveSectionDescription}
+                    </p>
+                  </div>
                 )}
+
+                {/* Navigation */}
+                <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <button
+                    onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
+                    disabled={currentSection === 0}
+                    className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ArrowLeft className="h-4 w-4" />
+                    <span>{uiText.previous}</span>
+                  </button>
+
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {currentSection + 1} of {sections.length}
+                  </span>
+
+                  {currentSection < sections.length - 1 ? (
+                    <button
+                      onClick={() => setCurrentSection(currentSection + 1)}
+                      className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next}</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/${params.lang}/modules/scoping-logistics`}
+                      className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next} Module</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>    );
+    </div>);
 }
 
 const ReflectionLearningPage = withModuleProgress(
   ReflectionLearningComponent,
   'reflection-learning',
-  8
+  11
 );
 
 export default ReflectionLearningPage;

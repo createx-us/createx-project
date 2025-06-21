@@ -97,6 +97,114 @@
         "youveCompleted": "您已完成",
         "modulesKeepUp": "个模块。继续保持出色的工作！",
         "continueLearning": "继续学习",
+        "creativity-fundamentals": {
+            "title": "创造力基础",
+            "description": "探索创造力的本质、神话和科学基础，为有效的引导奠定基础"
+        },
+        "design-thinking-history": {
+            "title": "设计思维历史", 
+            "description": "了解设计思维的演变及其在现代创新中的应用"
+        },
+        "creative-confidence": {
+            "title": "创造性自信",
+            "description": "掌握创造力的心理学和神经科学，通过验证技术和AI放大建立自信"
+        },
+        "mission-principles": {
+            "title": "CreateX使命与原则",
+            "description": "理解CreateX的核心使命、价值观和指导原则"
+        },
+        "facilitator-mindsets": {
+            "title": "引导师思维模式",
+            "description": "培养成功引导所需的核心思维模式和态度"
+        },
+        "process-overview": {
+            "title": "流程概览",
+            "description": "设计思维五个阶段的完整指南和最佳实践"
+        },
+        "research-empathy": {
+            "title": "研究与同理心",
+            "description": "通过深入理解用户需求、感受和动机来建立同理心的工具和技术"
+        },
+        "sense-making": {
+            "title": "意义建构",
+            "description": "将研究数据转化为可操作洞察的技术和框架"
+        },
+        "framing-prioritization": {
+            "title": "框架与优先级",
+            "description": "基于用户洞察将复杂问题重新构架为清晰、可操作的设计挑战"
+        },
+        "ideation-methods": {
+            "title": "创意生成方法",
+            "description": "产生大量创新想法的结构化技术和方法"
+        },
+        "prototyping-methods": {
+            "title": "原型制作方法",
+            "description": "快速、低成本地构建和测试想法的原则和方法"
+        },
+        "testing-feedback": {
+            "title": "测试与反馈",
+            "description": "与真实用户测试原型并收集有意义反馈的方法"
+        },
+        "implementation-roadmapping": {
+            "title": "实施与路线图",
+            "description": "将概念转化为现实的规划和执行策略"
+        },
+        "reflection-learning": {
+            "title": "反思与学习",
+            "description": "从设计思维过程中提取学习和改进的技术"
+        },
+        "scoping-logistics": {
+            "title": "范围与后勤",
+            "description": "规划和组织成功工作坊的实用指南"
+        },
+        "agenda-design": {
+            "title": "议程设计",
+            "description": "创建引人入胜和有效的工作坊议程的技术"
+        },
+        "facilitation-skills": {
+            "title": "引导技能",
+            "description": "掌握有效引导所需的核心沟通和促进技能"
+        },
+        "ai-integration": {
+            "title": "AI集成",
+            "description": "如何在设计思维过程中有效整合AI工具和技术"
+        },
+        "troubleshooting": {
+            "title": "故障排除",
+            "description": "识别和解决工作坊中常见挑战的策略"
+        },
+        "capturing-outcomes": {
+            "title": "捕获成果",
+            "description": "记录、分享和跟进工作坊成果的方法"
+        },
+        "case-study-corporate": {
+            "title": "案例研究：企业",
+            "description": "企业环境中设计思维应用的真实案例"
+        },
+        "case-study-nonprofit": {
+            "title": "案例研究：非营利组织",
+            "description": "非营利组织中设计思维应用的实际案例"
+        },
+        "case-study-education": {
+            "title": "案例研究：教育",
+            "description": "教育环境中设计思维应用的实践案例"
+        },
+        "analytics-kpis": {
+            "title": "分析与KPI",
+            "description": "测量和评估设计思维项目影响的方法"
+        },
+        "competency-certification": {
+            "title": "能力认证",
+            "description": "引导师技能评估和认证的框架和流程"
+        },
+        "personal-brand": {
+            "title": "个人品牌",
+            "description": "建立和发展作为设计思维引导师的个人品牌"
+        },
+        "community-practice": {
+            "title": "实践社区",
+            "description": "加入和贡献于设计思维引导师专业社区"
+        },
         "creativityFundamentals": {
             "title": "创造力基础",
             "description": "探索创造力的本质、神话和科学基础，为有效的引导奠定基础。",

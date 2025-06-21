@@ -174,6 +174,18 @@ function FacilitatorMindsetsComponent({
       title: "5.9 现场笔记与延伸阅读",
       type: "content",
       content: "### 必需资源\n- **书籍**：《参与式决策制定引导者指南》（Kaner）\n- **论文**：Goleman (2013) \"情商与创造性协作\"\n- **工具包**：createx.us/toolkit/mindset-cards — 工作坊前正念抽认卡\n- **播客**：引导实验室直播 — 第55集\"混合存在感技巧\"\n\n### 社区实践\n- 加入CreateX Slack #facilitator-mindsets频道\n- 参加月度虚拟引导者圈子\n- 用#mindset-monday标签分享你的心态实验\n- 为开源引导者工具包做贡献"
+    },
+    {
+      id: "section-5-10",
+      title: "5.10 实践练习",
+      type: "interactive",
+      content: "### 练习1：心态自我评估（15分钟）\n为每个核心心态给自己评分（1-5）。识别你最强的和需要成长的领域。与伙伴分享并讨论具体的发展策略。\n\n### 练习2：角色三角实践（20分钟）\n规划一个30分钟的工作坊段落。将每个5分钟块标记为向导（G）、大师（U）或护栏（R）。力求在一天中平衡三角形。\n\n### 练习3：存在感实验（10分钟）\n练习不同的存在感模式：站立引导3分钟，然后坐下引导3分钟。注意能量和团体反应的差异。"
+    },
+    {
+      id: "section-5-11",
+      title: "5.11 反思问题",
+      type: "interactive",
+      content: "1. 五个核心心态中哪个对你来说最自然？哪个最具挑战性？\n\n2. 在不同环境中（面对面vs虚拟），你的引导存在感如何变化？\n\n3. 引导者倦怠的早期警告信号是什么？你承诺采用哪些自我照护实践？\n\n4. 在你当前角色中，如何练习向导-大师-护栏的平衡？\n\n5. 你在引导风格中认识到的一个反模式是什么？你将尝试什么具体的补救措施？\n\n---\n\n### 引导者检查清单\n\n- [ ] 在引导者准备会上审查心态卡片\n- [ ] 在议程中平衡角色三角\n- [ ] 校准情感小组件\n- [ ] 安排自我照护休息\n- [ ] 与共同引导者分享反模式意识\n- [ ] 安排会后社区汇报"
     }
   ];
 
@@ -234,180 +246,180 @@ function FacilitatorMindsetsComponent({
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <ProgressIndicator progress={Math.round((moduleProgress.moduleProgress.sectionsCompleted.size / sections.length) * 100)} className="mb-4" />
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <Link
-                href={`/${params.lang}/modules`}
-                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              >
-                <ArrowLeft className="h-5 w-5 mr-2" />
-                {uiText.backToModules}
-              </Link>
-              <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-              <div>
-                <div className="flex items-center space-x-2 mb-1">
-                  <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                    {uiText.chapter} 5
-                  </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">Foundations</span>
+        {/* Header */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <Link
+                  href={`/${params.lang}/modules`}
+                  className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  <ArrowLeft className="h-5 w-5 mr-2" />
+                  {uiText.backToModules}
+                </Link>
+                <div className="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+                <div>
+                  <div className="flex items-center space-x-2 mb-1">
+                    <span className="text-xs font-bold px-2 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                      {uiText.chapter} 5
+                    </span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">Foundations</span>
+                  </div>
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {uiText.moduleTitle}
+                  </h1>
                 </div>
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {uiText.moduleTitle}
-                </h1>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  {Math.round(progress)}% {uiText.completed}
+                </div>
+                <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                  <div
+                    className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
+                    style={{ width: `${progress}%` }}
+                  ></div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                {Math.round(progress)}% {uiText.completed}
+            <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
+              <div className="flex items-center space-x-1">
+                <Clock className="h-4 w-4" />
+                <span>40 minutes</span>
               </div>
-              <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
-                <div
-                  className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-300"
-                  style={{ width: `${progress}%` }}
-                ></div>
+              <div className="flex items-center space-x-1">
+                <Award className="h-4 w-4" />
+                <span>{uiText.intermediate}</span>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
-            <div className="flex items-center space-x-1">
-              <Clock className="h-4 w-4" />
-              <span>40 minutes</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Award className="h-4 w-4" />
-              <span>{uiText.intermediate}</span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Sidebar Navigation */}
-          <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                {uiText.moduleSections}
-              </h3>
-              <nav className="space-y-2">
-                {sections.map((section: Section, index: number) => (
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Sidebar Navigation */}
+            <div className="lg:col-span-1">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sticky top-8">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  {uiText.moduleSections}
+                </h3>
+                <nav className="space-y-2">
+                  {sections.map((section: Section, index: number) => (
+                    <button
+                      key={section.id}
+                      onClick={() => setCurrentSection(index)}
+                      className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
+                        ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
+                        : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                        }`}
+                    >
+                      <span className="text-sm font-medium">{section.title}</span>
+                      {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                      )}
+                    </button>
+                  ))}
+                </nav>
+              </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="lg:col-span-3">
+              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    {sections[currentSection].title}
+                  </h2>
                   <button
-                    key={section.id}
-                    onClick={() => setCurrentSection(index)}
-                    className={`w-full text-left flex items-center justify-between p-3 rounded-lg transition-colors ${currentSection === index
-                      ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
-                      : 'hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                    onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
+                      ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
                   >
-                    <span className="text-sm font-medium">{section.title}</span>
-                    {moduleProgress.moduleProgress.sectionsCompleted.has(index) && (
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                    {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
+                      <>
+                        <CheckCircle className="h-4 w-4" />
+                        <span>{uiText.completed}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="h-4 w-4" />
+                        <span>{uiText.markComplete}</span>
+                      </>
                     )}
                   </button>
-                ))}
-              </nav>
-            </div>
-          </div>
-
-          {/* Main Content */}
-          <div className="lg:col-span-3">
-            <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {sections[currentSection].title}
-                </h2>
-                <button
-                  onClick={() => moduleProgress.toggleSectionComplete(currentSection)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${moduleProgress.moduleProgress.sectionsCompleted.has(currentSection)
-                    ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
-                >
-                  {moduleProgress.moduleProgress.sectionsCompleted.has(currentSection) ? (
-                    <>
-                      <CheckCircle className="h-4 w-4" />
-                      <span>{uiText.completed}</span>
-                    </>
-                  ) : (
-                    <>
-                      <Play className="h-4 w-4" />
-                      <span>{uiText.markComplete}</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
-              {/* Content */}
-              <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div dangerouslySetInnerHTML={{
-                  __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
-                }} />
-              </div>
-
-              {/* Section Type Indicator */}
-              {sections[currentSection].type === 'interactive' && (
-                <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                  <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
-                    <Play className="h-5 w-5" />
-                    <span className="font-medium">{uiText.interactiveSection}</span>
-                  </div>
-                  <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
-                    {uiText.interactiveSectionDescription}
-                  </p>
                 </div>
-              )}
 
-              {/* Navigation */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
-                  disabled={currentSection === 0}
-                  className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  <span>{uiText.previous}</span>
-                </button>
+                {/* Content */}
+                <div className="prose prose-lg dark:prose-invert max-w-none">
+                  <div dangerouslySetInnerHTML={{
+                    __html: processedContent || sections[currentSection].content.replace(/\n/g, '<br />')
+                  }} />
+                </div>
 
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  {currentSection + 1} of {sections.length}
-                </span>
-
-                {currentSection < sections.length - 1 ? (
-                  <button
-                    onClick={() => setCurrentSection(currentSection + 1)}
-                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
-                  >
-                    <span>{uiText.next}</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                ) : (
-                  <Link
-                    href={`/${params.lang}/modules/process-overview`}
-                    className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
-                  >
-                    <span>{uiText.next} Module</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
+                {/* Section Type Indicator */}
+                {sections[currentSection].type === 'interactive' && (
+                  <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                    <div className="flex items-center space-x-2 text-blue-700 dark:text-blue-400">
+                      <Play className="h-5 w-5" />
+                      <span className="font-medium">{uiText.interactiveSection}</span>
+                    </div>
+                    <p className="text-sm text-blue-600 dark:text-blue-300 mt-1">
+                      {uiText.interactiveSectionDescription}
+                    </p>
+                  </div>
                 )}
+
+                {/* Navigation */}
+                <div className="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                  <button
+                    onClick={() => setCurrentSection(Math.max(0, currentSection - 1))}
+                    disabled={currentSection === 0}
+                    className="flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ArrowLeft className="h-4 w-4" />
+                    <span>{uiText.previous}</span>
+                  </button>
+
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {currentSection + 1} of {sections.length}
+                  </span>
+
+                  {currentSection < sections.length - 1 ? (
+                    <button
+                      onClick={() => setCurrentSection(currentSection + 1)}
+                      className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next}</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/${params.lang}/modules/process-overview`}
+                      className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+                    >
+                      <span>{uiText.next} Module</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>    );
+    </div>);
 }
 
 const FacilitatorMindsetsPage = withModuleProgress(
   FacilitatorMindsetsComponent,
   'facilitator-mindsets',
-  9
+  12
 );
 
 export default FacilitatorMindsetsPage;

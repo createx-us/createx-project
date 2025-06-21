@@ -28,25 +28,25 @@ export const MODULE_CONFIG = {
     id: 'facilitator-mindsets', 
     name: 'Facilitator Mindsets',
     chapter: 5,
-    totalSections: 9
+    totalSections: 12
   },
   'process-overview': {
     id: 'process-overview',
     name: 'Process Overview',
     chapter: 6,
-    totalSections: 10
+    totalSections: 12
   },
   'research-empathy': {
     id: 'research-empathy',
     name: 'Research & Empathy',
     chapter: 7,
-    totalSections: 9
+    totalSections: 12
   },
   'sense-making': {
     id: 'sense-making',
     name: 'Sense Making',
     chapter: 8,
-    totalSections: 7
+    totalSections: 12
   },
   'framing-prioritization': {
     id: 'framing-prioritization',
@@ -58,7 +58,7 @@ export const MODULE_CONFIG = {
     id: 'ideation-methods',
     name: 'Ideation Methods',
     chapter: 10,
-    totalSections: 8
+    totalSections: 9
   },
   'prototyping-methods': {
     id: 'prototyping-methods',
@@ -70,31 +70,31 @@ export const MODULE_CONFIG = {
     id: 'testing-feedback',
     name: 'Testing & Feedback',
     chapter: 12,
-    totalSections: 10
+    totalSections: 13
   },
   'implementation-roadmapping': {
     id: 'implementation-roadmapping',
     name: 'Implementation & Roadmapping',
     chapter: 13,
-    totalSections: 11
+    totalSections: 14
   },
   'reflection-learning': {
     id: 'reflection-learning',
     name: 'Reflection & Learning',
     chapter: 14,
-    totalSections: 8
+    totalSections: 11
   },
   'scoping-logistics': {
     id: 'scoping-logistics',
     name: 'Scoping & Logistics',
     chapter: 15,
-    totalSections: 9
+    totalSections: 13
   },
   'agenda-design': {
     id: 'agenda-design',
     name: 'Agenda Design',
     chapter: 16,
-    totalSections: 10
+    totalSections: 11
   },
   'facilitation-skills': {
     id: 'facilitation-skills',
@@ -106,7 +106,7 @@ export const MODULE_CONFIG = {
     id: 'ai-integration',
     name: 'AI Integration',
     chapter: 18,
-    totalSections: 9
+    totalSections: 11
   },
   'troubleshooting': {
     id: 'troubleshooting',
@@ -124,7 +124,7 @@ export const MODULE_CONFIG = {
     id: 'case-study-corporate',
     name: 'Case Study: Corporate',
     chapter: 21,
-    totalSections: 7
+    totalSections: 9
   },
   'case-study-nonprofit': {
     id: 'case-study-nonprofit',
