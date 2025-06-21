@@ -124,7 +124,7 @@ export default function DynamicModulePage({ moduleId, lang }: ModulePageProps) {
                             {error || 'The requested module could not be found.'}
                         </p>
                         <Link
-                            href="/modules"
+                            href={`/${lang}/modules`}
                             className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
                         >
                             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -145,7 +145,7 @@ export default function DynamicModulePage({ moduleId, lang }: ModulePageProps) {
                 {/* Navigation */}
                 <div className="mb-8">
                     <Link
-                        href="/modules"
+                        href={`/${lang}/modules`}
                         className={`inline-flex items-center ${colors.accent} hover:opacity-80 transition-opacity`}
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />

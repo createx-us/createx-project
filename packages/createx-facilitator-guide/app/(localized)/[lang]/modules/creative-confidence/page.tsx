@@ -68,7 +68,15 @@ function CreativeConfidenceComponent({
 - **自我效能**：相信自己能够执行创造性任务的能力
 - **成长心态**：理解创造能力可以通过发展获得
 - **容忍模糊性**：对不确定性和不完整信息感到舒适
-- **内在动机**：为个人满足而非外部奖励而创造的驱动力`,
+- **内在动机**：为个人满足而非外部奖励而创造的驱动力
+
+### 创造性自信思维模式
+
+创造性自信表现为特定的思维模式，特征包括：
+- **"我可以学会更有创造力"** 而不是 **"我要么有创造力要么没有"**
+- **"失败教会我"** 而不是 **"失败意味着我没有创造力"**
+- **"不同的观点丰富了解决方案"** 而不是 **"有一个正确答案"**
+- **"创造力是一个过程"** 而不是 **"创造力是灵感"**`,
           type: 'content'
         },
         {
@@ -92,7 +100,25 @@ function CreativeConfidenceComponent({
 - 呈现没有明确解决方案的问题
 - 鼓励对相同数据的多种解释
 - 练习'是的，并且...'而不是'是的，但是...'
-- 将不确定性框架为机会而非威胁`,
+- 将不确定性框架为机会而非威胁
+
+### 支柱3：成长心态
+理解创造能力可以通过努力、实践和从失败中学习而发展。
+
+**引导师技巧：**
+- 庆祝过程而非结果
+- 分享创造性发展的故事
+- 规范化奋斗和迭代
+- 专注于学习而非证明
+
+### 支柱4：内在动机
+为个人满足、学习和表达而创造，而非外部验证。
+
+**引导师技巧：**
+- 将挑战与个人价值观联系
+- 鼓励对创造性兴趣的自我反思
+- 最小化外部压力和比较
+- 为个人创造性表达创造空间`,
           type: 'content'
         },
         {
@@ -121,45 +147,111 @@ function CreativeConfidenceComponent({
 - 在专注工作和放松反思之间交替
 - 在不同类型活动之间包含过渡仪式
 - 允许个人反思和团体互动
-- 使用运动和环境变化来触发网络切换`,
+- 使用运动和环境变化来触发网络切换
+
+### 创造性大脑的运作
+
+研究表明，高度创造性的个体擅长：
+- **认知灵活性**：在不同概念和视角之间切换
+- **远程关联**：连接看似无关的想法
+- **开放性体验**：寻求新颖的体验和想法
+- **发散性思维**：为问题生成多种解决方案`,
           type: 'content'
         },
         {
-          id: 'ai-confidence-amplifier',
-          title: '3.7 AI作为自信放大器',
-          content: `AI可以通过提供无判断的协作、快速迭代能力和多元化视角生成，成为创造性自信的强大放大器。
+          id: 'measuring-creative-confidence',
+          title: '3.4 测量创造性自信',
+          content: `创造性自信可以通过正式评估和观察指标来测量和跟踪。
 
-### 1. 创造性对话伙伴
-使用AI进行无判断的头脑风暴，探索疯狂想法，克服初始犹豫。
+### 正式测量工具
 
-**提示框架：** "我正在处理[创造性挑战]。帮助我探索一些非常规方法。不要担心可行性——专注于新颖的视角。我们可以考虑10个疯狂的想法是什么？"
+#### 创造性自信量表（CCS）
+一个经过验证的心理工具，测量四个维度：
+- **创造性自我效能**：对创造能力的信心
+- **创造性坚持**：通过挑战坚持的意愿
+- **创造性冒险**：对创造性不确定性的舒适度
+- **社会创造性**：对创造性协作的信心
 
-### 2. 快速原型制作助手
-生成快速模型、场景和变化来测试想法，避免完全投入。
+#### 另类思维评估（ATA）
+测量生成新颖解决方案的能力：
+- **流畅性**：生成想法的数量
+- **灵活性**：想法类别的多样性
+- **原创性**：响应的统计稀有性
+- **阐述性**：想法的细节和发展
 
-**应用：**
-- 为测试概念生成用户场景
-- 创建视觉模型和线框图
-- 编写样本内容和文案
-- 开发测试用例和边缘条件
+### 可观察的行为指标
 
-### 3. 视角倍增器
-即时访问多元化观点、文化视角和领域专业知识。
+#### 在创造性活动期间：
+- **参与水平**：对讨论的自愿贡献
+- **想法分享**：表达新颖想法的意愿
+- **建构行为**：发展他人想法的倾向
+- **恢复模式**：从挫折中反弹的速度
 
-**提示例子：**
-- "[特定人群]会如何处理这个挑战？"
-- "来自[不同行业]的人会建议什么？"
-- "这个想法在[不同环境]中需要如何改变？"
+#### 要跟踪的前后指标：
+- 自报的创造性身份陈述
+- 承担创造性挑战的意愿
+- 创造性冒险的频率
+- 创造性协作的质量
 
-### 4. 进度追踪器
-监控创造性产出模式并提供个性化的自信建构反馈。
+### 引导师评估框架
 
-**跟踪维度：**
-- 随时间的想法数量和多样性
-- 创造性选择中的冒险进展
-- 协作模式和同伴建构
-- 迭代频率和学习速度`,
-          type: 'interactive'
+通过以下方式跟踪进展：
+- **入门调查**：基线创造性自信水平
+- **会议观察**：随时间的行为变化
+- **同伴反馈**：360度创造性自信评估
+- **自我反思**：个人成长叙述和洞察`,
+          type: 'content'
+        },
+        {
+          id: 'building-individual-confidence',
+          title: '3.5 建立个人创造性自信',
+          content: `### 技巧1：微成功策略
+通过小的、可实现的创造性胜利建立信心。
+
+**实施方法：**
+- 从低风险的创造性挑战开始
+- 庆祝小的改进和洞察
+- 通过作品集记录创造性成长
+- 分享个人创造性故事和突破
+
+### 技巧2：失败重新框架
+将挫折转化为学习机会。
+
+**重新框架技巧：**
+- "这教会了我关于问题的什么？"
+- "我如何能够建立在有效的基础上？"
+- "下次我会尝试什么不同的方法？"
+- "这次失败如何让我更接近解决方案？"
+
+### 技巧3：创造性技能阶梯
+系统性地发展创造能力。
+
+**技能进展：**
+1. **观察**：注意细节和模式
+2. **问题生成**：提出更好的"如果"问题
+3. **想法流畅性**：快速生成许多选项
+4. **概念混合**：结合不同的想法
+5. **快速原型制作**：快速使想法变得有形
+6. **迭代掌握**：通过反馈循环改进
+
+### 技巧4：个人创造性仪式
+发展触发创造性自信的个人实践。
+
+**仪式元素：**
+- **环境**：特定的物理或数字空间
+- **热身**：创造力启动活动
+- **过程**：个人创造性工作流程
+- **反思**：学习捕获和整合
+
+### 技巧5：创造性身份发展
+帮助个人将自己视为有创造力的人。
+
+**身份建构活动：**
+- 创造性优势评估和庆祝
+- 个人创造性历史探索
+- 创造性榜样识别
+- 未来创造性自我可视化`,
+          type: 'content'
         },
         {
           id: 'building-team-confidence',
@@ -172,6 +264,12 @@ function CreativeConfidenceComponent({
 - "先建构想法再批评"
 - "庆祝实验，不仅仅是成功"
 - "每个人的视角都增加价值"
+
+**环境设计：**
+- 创建专门的创造性空间
+- 使用可视化协作工具
+- 提供多样化的材料和资源
+- 为运动和活力而设计
 
 ### 技巧2：集体自信建构
 使用团体反思来建立共享的创造性身份。
@@ -189,8 +287,26 @@ function CreativeConfidenceComponent({
 - 有经验的创造者指导新手
 - 新手为有经验的创造者带来新鲜视角
 - 定期检查和学习反思
-- 在更长程序中的角色轮换`,
-          type: 'interactive'
+- 在更长程序中的角色轮换
+
+### 技巧4：团队创造性挑战
+通过协作解决问题建立信心。
+
+**挑战框架：**
+- 提出需要多样化技能的问题
+- 鼓励角色灵活性和实验
+- 庆祝团队创造性突破
+- 反思协作创造性过程
+
+### 技巧5：同伴放大系统
+创建团队成员互相提升创造性自信的结构。
+
+**放大方法：**
+- 创造性优势发现和分享
+- 想法建构和增强实践
+- 创造性挑战的同伴指导
+- 创造性方法的交叉授粉`,
+          type: 'content'
         }
       ];
     } else {
@@ -223,7 +339,15 @@ Research shows that people with higher creative confidence:
 - **Self-efficacy**: Belief in one's ability to execute creative tasks
 - **Growth mindset**: Understanding that creative ability can be developed
 - **Tolerance for ambiguity**: Comfort with uncertainty and incomplete information
-- **Intrinsic motivation**: Drive to create for personal fulfillment rather than external rewards`,
+- **Intrinsic motivation**: Drive to create for personal fulfillment rather than external rewards
+
+### The Creative Confidence Mindset
+
+Creative confidence manifests as a specific mindset characterized by:
+- **"I can learn to be more creative"** rather than "I'm either creative or I'm not"
+- **"Failure teaches me"** rather than "Failure means I'm not creative"
+- **"Different perspectives enrich solutions"** rather than "There's one right answer"
+- **"Creativity is a process"** rather than "Creativity is inspiration"`,
           type: 'content'
         },
         {
@@ -247,7 +371,25 @@ Comfort with uncertainty, incomplete information, and multiple possible solution
 - Present problems without clear solutions
 - Encourage multiple interpretations of the same data
 - Practice "Yes, and..." rather than "Yes, but..."
-- Frame uncertainty as opportunity rather than threat`,
+- Frame uncertainty as opportunity rather than threat
+
+### Pillar 3: Growth Mindset
+Understanding that creative abilities can be developed through effort, practice, and learning from failure.
+
+**Facilitator Techniques:**
+- Celebrate process over outcomes
+- Share stories of creative development
+- Normalize struggle and iteration
+- Focus on learning rather than proving
+
+### Pillar 4: Intrinsic Motivation
+Creating for personal satisfaction, learning, and expression rather than external validation.
+
+**Facilitator Techniques:**
+- Connect challenges to personal values
+- Encourage self-reflection on creative interests
+- Minimize external pressure and comparison
+- Create space for personal creative expression`,
           type: 'content'
         },
         {
@@ -276,49 +418,115 @@ Comfort with uncertainty, incomplete information, and multiple possible solution
 - Alternate between focused work and relaxed reflection
 - Include transition rituals between different types of activities
 - Allow for individual reflection and group interaction
-- Use movement and environmental changes to trigger network switching`,
+- Use movement and environmental changes to trigger network switching
+
+### The Creative Brain in Action
+
+Research shows that highly creative individuals excel at:
+- **Cognitive flexibility**: Switching between different concepts and perspectives
+- **Remote associations**: Connecting seemingly unrelated ideas
+- **Openness to experience**: Seeking out novel experiences and ideas
+- **Divergent thinking**: Generating multiple solutions to problems`,
           type: 'content'
         },
         {
-          id: 'ai-confidence-amplifier',
-          title: '3.7 AI as Confidence Amplifier',
-          content: `AI can be a powerful amplifier of creative confidence through non-judgmental collaboration, rapid iteration capabilities, and diverse perspective generation.
+          id: 'measuring-creative-confidence',
+          title: '3.4 Measuring Creative Confidence',
+          content: `Creative confidence can be measured and tracked through both formal assessments and observational indicators.
 
-### 1. Creative Sparring Partner
-Use AI for judgment-free brainstorming, exploring wild ideas, and overcoming initial hesitation.
+### Formal Measurement Tools
 
-**Prompt Framework:** "I'm working on [creative challenge]. Help me explore some unconventional approaches. Don't worry about feasibility—focus on novel perspectives. What might 10 wild ideas look like?"
+#### Creative Confidence Scale (CCS)
+A validated psychological instrument measuring four dimensions:
+- **Creative self-efficacy**: Confidence in creative abilities
+- **Persistence in creativity**: Willingness to persist through challenges
+- **Risk-taking in creativity**: Comfort with creative uncertainty
+- **Social creativity**: Confidence in creative collaboration
 
-### 2. Rapid Prototyping Assistant
-Generate quick models, scenarios, and variations to test ideas without full investment.
+#### Alternative Thinking Assessment (ATA)
+Measures the ability to generate novel solutions:
+- **Fluency**: Number of ideas generated
+- **Flexibility**: Variety of categories of ideas
+- **Originality**: Statistical rarity of responses
+- **Elaboration**: Detail and development of ideas
 
-**Applications:**
-- Generate user scenarios to test concepts
-- Create visual models and wireframes
-- Write sample content and copy
-- Develop test cases and edge conditions
+### Observable Behavioral Indicators
 
-### 3. Perspective Multiplier
-Instant access to diverse viewpoints, cultural perspectives, and domain expertise.
+#### During Creative Activities:
+- **Participation level**: Voluntary contribution to discussions
+- **Idea sharing**: Willingness to voice novel thoughts
+- **Building behavior**: Tendency to develop others' ideas
+- **Recovery patterns**: How quickly someone bounces back from setbacks
 
-**Example Prompts:**
-- "How might [specific population] approach this challenge?"
-- "What would someone from [different industry] suggest?"
-- "How would this idea need to change in [different setting]?"
+#### Pre/Post Indicators to Track:
+- Self-reported creative identity statements
+- Willingness to take on creative challenges
+- Frequency of creative risk-taking
+- Quality of creative collaboration
 
-### 4. Progress Tracker
-Monitor creative output patterns and provide personalized confidence-building feedback.
+### Facilitator Assessment Framework
 
-**Dimensions Tracked:**
-- Idea quantity and diversity over time
-- Risk progression in creative choices
-- Collaboration patterns and peer building
-- Iteration frequency and learning velocity`,
-          type: 'interactive'
+Track progress through:
+- **Entry surveys**: Baseline creative confidence levels
+- **Session observations**: Behavioral changes over time
+- **Peer feedback**: 360-degree creative confidence assessment
+- **Self-reflection**: Personal growth narratives and insights`,
+          type: 'content'
+        },
+        {
+          id: 'building-individual-confidence',
+          title: '3.5 Building Creative Confidence — Individual Level',
+          content: `### Technique 1: Micro-Successes Strategy
+Build confidence through small, achievable creative wins.
+
+**Implementation:**
+- Start with low-stakes creative challenges
+- Celebrate small improvements and insights
+- Document creative growth through portfolios
+- Share personal creative stories and breakthroughs
+
+### Technique 2: Failure Reframing
+Transform setbacks into learning opportunities.
+
+**Reframing Techniques:**
+- "What did this teach me about the problem?"
+- "How can I build on what worked?"
+- "What would I try differently next time?"
+- "How does this failure move me closer to a solution?"
+
+### Technique 3: Creative Skills Ladder
+Systematically develop creative capabilities.
+
+**Skill Progression:**
+1. **Observation**: Notice details and patterns
+2. **Question Generation**: Ask better "what if" questions
+3. **Idea Fluency**: Generate many options quickly
+4. **Conceptual Blending**: Combine disparate ideas
+5. **Rapid Prototyping**: Make ideas tangible quickly
+6. **Iteration Mastery**: Improve through feedback cycles
+
+### Technique 4: Personal Creative Ritual
+Develop individual practices that trigger creative confidence.
+
+**Ritual Elements:**
+- **Environment**: Specific physical or digital spaces
+- **Warm-up**: Creativity priming activities
+- **Process**: Personal creative workflow
+- **Reflection**: Learning capture and integration
+
+### Technique 5: Creative Identity Development
+Help individuals see themselves as creative people.
+
+**Identity Building Activities:**
+- Creative strengths assessment and celebration
+- Personal creative history exploration
+- Creative role model identification
+- Future creative self visualization`,
+          type: 'content'
         },
         {
           id: 'building-team-confidence',
-          title: '3.6 Building Creative Confidence—Team Level',
+          title: '3.6 Building Creative Confidence — Team Level',
           content: `### Technique 1: Psychological Safety Foundation
 Establish ground rules and rituals that promote safe creative risk-taking.
 
@@ -327,6 +535,12 @@ Establish ground rules and rituals that promote safe creative risk-taking.
 - "Build on ideas before criticizing"
 - "Celebrate experiments, not just successes"
 - "Every perspective adds value"
+
+**Environmental Design:**
+- Create dedicated creative spaces
+- Use visual collaboration tools
+- Provide diverse materials and resources
+- Design for movement and energy
 
 ### Technique 2: Collective Confidence Building
 Use group reflection to build shared creative identity.
@@ -344,8 +558,26 @@ Pair participants with different experience levels for mutual learning.
 - Experienced creators guide novices
 - Novices bring fresh perspective to experienced creators
 - Regular check-ins and learning reflections
-- Role rotation in longer programs`,
-          type: 'interactive'
+- Role rotation in longer programs
+
+### Technique 4: Team Creative Challenges
+Build confidence through collaborative problem-solving.
+
+**Challenge Framework:**
+- Present problems requiring diverse skills
+- Encourage role flexibility and experimentation
+- Celebrate team creative breakthroughs
+- Reflect on collaborative creative process
+
+### Technique 5: Peer Amplification System
+Create structures for team members to boost each other's creative confidence.
+
+**Amplification Methods:**
+- Creative strengths spotting and sharing
+- Idea building and enhancement practices
+- Peer coaching for creative challenges
+- Cross-pollination of creative approaches`,
+          type: 'content'
         }
       ];
     }
@@ -363,16 +595,6 @@ Pair participants with different experience levels for mutual learning.
     };
     processCurrentSection();
   }, [currentSection, params.lang]);
-  
-  const toggleSectionComplete = (index: number) => {
-    const newCompleted = new Set(completedSections);
-    if (newCompleted.has(index)) {
-      newCompleted.delete(index);
-    } else {
-      newCompleted.add(index);
-    }
-    setCompletedSections(newCompleted);
-  };
 
   const progress = (moduleProgress.moduleProgress.sectionsCompleted.size / sections.length) * 100;
 

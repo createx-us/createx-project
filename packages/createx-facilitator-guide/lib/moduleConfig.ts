@@ -24,11 +24,11 @@ export const MODULE_CONFIG = {
     chapter: 4,
     totalSections: 9
   },
-  'createx-mission': {
-    id: 'createx-mission',
-    name: 'CreateX Mission',
+  'facilitator-mindsets': {
+    id: 'facilitator-mindsets', 
+    name: 'Facilitator Mindsets',
     chapter: 5,
-    totalSections: 8
+    totalSections: 9
   },
   'process-overview': {
     id: 'process-overview',
@@ -102,23 +102,23 @@ export const MODULE_CONFIG = {
     chapter: 17,
     totalSections: 11
   },
-  'facilitator-mindsets': {
-    id: 'facilitator-mindsets',
-    name: 'Facilitator Mindsets',
+  'ai-integration': {
+    id: 'ai-integration',
+    name: 'AI Integration',
     chapter: 18,
+    totalSections: 9
+  },
+  'troubleshooting': {
+    id: 'troubleshooting',
+    name: 'Troubleshooting',
+    chapter: 19,
     totalSections: 9
   },
   'capturing-outcomes': {
     id: 'capturing-outcomes',
     name: 'Capturing Outcomes',
-    chapter: 19,
-    totalSections: 8
-  },
-  'troubleshooting': {
-    id: 'troubleshooting',
-    name: 'Troubleshooting',
     chapter: 20,
-    totalSections: 9
+    totalSections: 8
   },
   'case-study-corporate': {
     id: 'case-study-corporate',
@@ -161,12 +161,6 @@ export const MODULE_CONFIG = {
     name: 'Community of Practice',
     chapter: 27,
     totalSections: 8
-  },
-  'ai-integration': {
-    id: 'ai-integration',
-    name: 'AI Integration',
-    chapter: 28,
-    totalSections: 9
   }
 } as const;
 

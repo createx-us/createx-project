@@ -297,12 +297,52 @@ export const useModuleProgress = (moduleId: string, totalSections: number = 1) =
       currentSection: sectionIndex
     });
 
-    // Force immediate save after state update
-    setTimeout(() => {
-      console.log('🚀 Forcing immediate save after toggle...');
-      forceSave();
-    }, 150); // Give time for state to update
-  }, [getModuleProgress, updateModuleProgress, moduleId, forceSave]);
+    // Immediately save to localStorage with the new state (don't wait for React state update)
+    if (typeof window !== 'undefined') {
+      try {
+        const currentProgress = userProgress;
+        const updatedModule = {
+          ...currentModule,
+          sectionsCompleted: newCompletedSections,
+          currentSection: sectionIndex,
+          lastAccessed: new Date().toISOString(),
+          progress: Math.round((newCompletedSections.size / totalSections) * 100),
+          completed: newCompletedSections.size === totalSections
+        };
+
+        const newProgressState = {
+          ...currentProgress,
+          modules: {
+            ...currentProgress.modules,
+            [moduleId]: updatedModule
+          },
+          lastActivity: new Date().toISOString()
+        };
+
+        // Convert Sets to arrays for JSON serialization
+        const progressToSave = {
+          ...newProgressState,
+          modules: Object.keys(newProgressState.modules).reduce((acc, key) => {
+            const module = newProgressState.modules[key];
+            acc[key] = {
+              ...module,
+              sectionsCompleted: Array.from(module.sectionsCompleted || new Set())
+            };
+            return acc;
+          }, {} as Record<string, any>)
+        };
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(progressToSave));
+        console.log('💾 Immediately saved section completion to localStorage:', {
+          sectionIndex,
+          totalCompleted: newCompletedSections.size,
+          progress: updatedModule.progress
+        });
+      } catch (error) {
+        console.error('❌ Failed to immediately save progress:', error);
+      }
+    }
+  }, [getModuleProgress, updateModuleProgress, moduleId, userProgress, totalSections]);
 
   // Mark entire module as complete
   const markModuleComplete = useCallback(() => {

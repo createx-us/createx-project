@@ -19,22 +19,14 @@ export function LanguageSelector() {
         // Create new path with the selected locale
         let newPath;
 
-        if (newLocale === defaultLocale) {
-            // For default locale, just remove the locale segment
-            const pathWithoutLocale = pathParts.length > 1 && locales.includes(pathParts[1] as Locale)
-                ? '/' + pathParts.slice(2).join('/')
-                : pathname;
-            newPath = pathWithoutLocale || '/';
+        // Always include locale in the path since we use static export
+        if (locales.includes(pathParts[1] as Locale)) {
+            // Replace existing locale
+            pathParts[1] = newLocale;
+            newPath = pathParts.join('/');
         } else {
-            // For other locales, replace or add the locale segment
-            if (locales.includes(pathParts[1] as Locale)) {
-                // Replace existing locale
-                pathParts[1] = newLocale;
-                newPath = pathParts.join('/');
-            } else {
-                // Add locale after first slash
-                newPath = `/${newLocale}${pathname}`;
-            }
+            // Add locale after first slash
+            newPath = `/${newLocale}${pathname}`;
         }
 
         // Handle trailing slash consistency
