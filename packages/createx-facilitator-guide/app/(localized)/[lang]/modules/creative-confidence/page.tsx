@@ -775,7 +775,7 @@ Create structures for team members to boost each other's creative confidence.
                     </button>
                   ) : (
                     <Link
-                      href={`/${params.lang}/modules/process-overview`}
+                      href={`/${params.lang}/modules/createx-mission`}
                       className="flex items-center space-x-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
                     >
                       <span>{uiText.next} Module</span>
